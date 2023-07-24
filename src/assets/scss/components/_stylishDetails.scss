@@ -1,0 +1,49 @@
+.stylishCornerTreeColor {
+    position: relative;
+    &::after {
+        content: ' ';
+        width: 37px;
+        height: 24px;
+        border-top-width: 14px;
+        border-top-style: solid;
+        border-image: linear-gradient(to right, $orange-color 27%, $orange-light-color 27%, $orange-light-color 64%, $vialet-color 64%, $vialet-color 100%) 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: linear-gradient(to right, $orange-color 65%, transparent 65%, transparent 100%);
+    }
+    &::before {
+        content: ' ';
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: 0;
+        top: 24px;
+        background-color: $vialet-color;
+        z-index: 1;
+    }
+    &:has(.btn) {
+        &::after {
+            height: 18px;
+            width: 28px;
+            border-top-width: 10px;
+        }
+        &::before {
+            top: 18px;
+        }
+
+    }
+}
+.rightColorFullLine {
+    position: relative;
+    &:after {
+        content: ' ';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 18px;
+        height: 100%;
+        z-index: 1;
+        @include colorline(bottom)
+    }
+}

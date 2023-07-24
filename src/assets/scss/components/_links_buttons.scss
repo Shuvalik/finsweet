@@ -1,0 +1,101 @@
+.arrowLink {
+    padding-right: 25px;
+    position: relative;
+    font-weight: 500;
+    color: $font-link-color;
+    &::after {
+        content: ' ';
+        width: 20px;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background-color: $main-color;
+    }
+    &::before {
+        content: ' ';
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%) rotate(45deg);
+        border: 1px solid $main-color;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+.btn {
+  border: 0;
+  font-weight: 500;
+  font-family: $base-font;
+  @include font(16, 24);
+  color: $font-color-opacity-white;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 0 68px 0 32px;
+  background-color: $blue-color;
+  &.arrowLink {
+    &::after {
+        background-color: $font-color-opacity-white;
+    }
+    &::before {
+        border-top-color: $font-color-opacity-white;
+        border-right-color: $font-color-opacity-white;
+    }
+  }
+}
+
+.colorLineLink {
+    position: relative;
+    padding-left: 55px;
+    &::after {
+        content: ' ';
+        width: 50px;
+        height: 14px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        position: absolute;
+        background: linear-gradient(to right, $orange-light-color 26%, $vialet-color 26%, $vialet-color 100%);
+    }
+    &::before {
+        content: ' ';
+        width: 0;
+        height: 14px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        position: absolute;
+        transition: all ease-in-out 0.3s;
+        background: $orange-light-color;
+        z-index: 1;
+    }
+    &:has(a:hover) {
+        &::before {
+            width: 50px;
+        }
+    }
+}
+.sotial-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+    // @media only screen and (max-width: 1024px) {
+    //   gap: 10px;
+    // }
+  a {
+    display: inline-block;
+    svg {
+      vertical-align: text-top;
+    }
+    &:hover svg {
+        transform: scale(1.5);
+      path {
+        fill: $blue-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.campaign {
+    padding: 176px 0 33px;
+    background-color: $main-color;
+    color: $font-color;
+    .imageHolder {
+        aspect-ratio: 563/632;
+        max-width: 563px;
+        border: 0;
+        border-right: 24px;
+        border-style: solid;
+        border-image: linear-gradient($orange-color 12%, $orange-light-color 12%, $orange-light-color 47%, $vialet-color 47%, $vialet-color 54%, transparent 54%, transparent 100%) 1;
+        padding-left: 16px;
+        img {
+            display: block;
+            border: 0;
+            border-left: 16px;
+            border-style: solid;
+            border-image: linear-gradient(transparent 84%, $orange-color 84%, $orange-color 88%, $orange-light-color 88%, $orange-light-color 98%, $vialet-color 98%, $vialet-color 100%) 1;
+        }
+    }
+    .clientLists {
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        font-weight: 500;
+        span {
+            @include font(14, 20);
+            margin-bottom: 15px;
+        }
+        p {
+            @include font(18, 28);
+            color: $white-color;
+        }
+        .logosList {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            svg {
+                width: 100px;
+                height: auto;
+            }
+            a:hover svg path {
+                fill: $white-color; 
+                &.whiteColor {
+                    fill: $grey-dark-color;
+                }
+            }
+        }
+    }
+}
+
+.aboutUs {
+    .twoColumns {
+        gap: 50px;
+        align-items: center;
+    }
+    .threeImgBoxes {
+        margin-bottom: 48px;
+    }
+}

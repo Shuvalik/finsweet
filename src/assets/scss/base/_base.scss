@@ -1,0 +1,76 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: $base-font;
+    font-weight: 400;
+    color: $main-color;
+    @include font(16, 24);
+    scroll-behavior: smooth;
+} 
+.container {
+    width: min(90%, $base-width);
+    /*width: 100%;
+    max-width: 1170px;*/
+    margin-inline: auto;
+}
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex-grow: 1;
+}
+section {
+  padding: 96px 0;
+}
+.twoColumns {
+    display: flex;
+    justify-content: space-between;
+    > div {
+      max-width: 50%;
+      
+    flex: 1 0 fit-content;
+    }
+}
+.threeColumns {
+  display: flex;
+  justify-content: space-between;
+  > div {
+    max-width: 33%;
+    flex: 1 0 fit-content;
+  }
+}
+p {
+  margin-bottom: 24px;
+}
+.h1 {
+  color: $white-color;
+  @include font(56, 68);
+  font-weight: 600;
+  padding-top: 40px;
+  margin-bottom: 30px;
+  @include pixel(24, $grey-dark-color);
+}
+.h2 {
+  font-weight: 600;
+  @include font(48, 58);
+  margin-bottom: 10px;
+}
+.h3 {
+  font-weight: 600;
+  @include font(36, 54);
+  margin-bottom: 20px;
+}
+.sectionTitle {
+  font-weight: 500;
+  @include font(14, 20);
+  letter-spacing: 3px;
+}

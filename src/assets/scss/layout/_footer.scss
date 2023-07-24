@@ -1,0 +1,94 @@
+.footer {
+    font-weight: 500;
+    .topSide {
+        padding: 50px 0 35px;
+    }
+    .subTitle {
+        font-weight: 600;
+        @include font(24, 36);
+        margin-bottom: 20px;
+    }
+    address {
+        font-style: normal;
+        a {
+            color: $main-color;
+            @include font(18, 28);
+            position: relative;
+            &::after {
+                content: '';
+                width: 0;
+                height: 1px;
+                background-color: $main-color;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: all .3s ease;
+            }
+            &:hover {
+                &::after {
+                    width: 100%; 
+                }
+            }
+        }
+        .separate {
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            padding: 15px 50px 0 0;
+        }
+    }
+    .navSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .threeColumns {
+            flex-grow: 1;
+            a {
+                @include font(14, 20);
+                color: $main-color;
+                position: relative;
+                &::after {
+                    content: '';
+                    width: 0;
+                    height: 1px;
+                    background-color: $main-color;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    transition: all .3s ease;
+                }
+                &:hover {
+                    &::after {
+                        width: 100%; 
+                    }
+                }
+            }
+        }
+        .colorLineLink {
+            align-self: flex-end;
+            display: inline-block;
+            .arrowLink {
+                @include font(16, 24);
+                color: $main-color;
+            }
+        }
+        .main-nav a, .titleMenu {
+            font-weight: 600;
+            @include font(16, 28);
+        }
+    }
+    .bottomSide {
+        background-color: $orange-lightest-color;
+        color: $black-color;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 25px;
+            height: 80px;
+            .copyRight {
+                flex-grow: 1;
+            }
+        }
+    }
+}

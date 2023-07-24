@@ -1,0 +1,30 @@
+.threeImgBoxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    .imageHolder {
+        flex: 1 0 100%;
+        aspect-ratio: 420/446;
+        max-width: 420px;
+    }
+}
+
+.counterList {
+    display: flex;
+    justify-content: space-between;
+    .number {
+        font-weight: 600;
+        @include font(36, 54);
+        display: block;
+        position: relative;
+        &::after {
+            content: ' ';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 6px;
+            width: 72px;
+            background: linear-gradient(to right, $vialet-color 14%, $orange-light-color 14%, $orange-light-color 76%, $orange-color 76%, $orange-color 100%);
+        }
+    }
+}

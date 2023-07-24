@@ -1,0 +1,24 @@
+@mixin font($size-px, $lh) {
+    font-size: ($size-px / 16) * 1rem;
+    line-height: $lh / $size-px;
+}
+@mixin circle($wh) {
+	width: $wh + px;
+	height: $wh + px;
+	border-radius: 50%;
+}
+@mixin pixel($size, $color) {
+	position: relative;
+	&::before {
+		content: ' ';
+		width: $size + px;
+		height: $size + px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: $color;
+	}
+}
+@mixin colorline($direction) {
+	background: linear-gradient(to $direction, $orange-color 25%, $orange-light-color 25%, $orange-light-color 75%, $vialet-color 75%, $vialet-color 100%);
+}
