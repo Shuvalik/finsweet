@@ -22,3 +22,7 @@
 @mixin colorline($direction) {
 	background: linear-gradient(to $direction, $orange-color 25%, $orange-light-color 25%, $orange-light-color 75%, $vialet-color 75%, $vialet-color 100%);
 }
+
+@mixin colorlineVar2($direction) {
+	background: linear-gradient(to $direction, $orange-color 25%, $orange-light-color 25%, $orange-light-color 85%, $vialet-color 85%, $vialet-color 100%);
+}

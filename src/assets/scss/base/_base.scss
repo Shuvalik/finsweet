@@ -69,8 +69,53 @@ p {
   @include font(36, 54);
   margin-bottom: 20px;
 }
+.h4 {
+  font-weight: 600;
+  @include font(24, 36);
+  margin-bottom: 20px;
+}
 .sectionTitle {
   font-weight: 500;
   @include font(14, 20);
   letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.subTitle {
+  font-weight: 500;
+  @include font(18, 28);
+}
+.titleBox {
+  color: $black-color;
+  font-weight: 600;
+}
+.addText {
+    color: $black-color;
+    @include font(12, 16);
+    font-weight: 500;
+    span {
+      @include font(16, 24);
+    }
+}
+blockquote {
+  font-weight: 600;
+  @include font(24, 36);
+}
+input {
+  width: 100%;
+  padding: 20px 30px;
+  font-family: $base-font;
+  font-weight: 500;
+  color: $font-color;
+  @include font(16, 24);
+}
+/**/
+.bg-orange {
+  background-color: $orange-lightest-color;
+}
+
+.bg-violet {
+  background-color: $vialet-lightest-color;
+}
+.bg-turquoise {
+  background-color: $turquoise-color;
 }

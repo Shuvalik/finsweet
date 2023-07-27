@@ -10,7 +10,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        background: linear-gradient(to right, $orange-color 65%, transparent 65%, transparent 100%);
+        background: linear-gradient(to right, $orange-color 64%, transparent 64%, transparent 100%);
     }
     &::before {
         content: ' ';
@@ -33,6 +33,24 @@
         }
 
     }
+    &.rightCorner {
+        &::after {
+            left:auto;
+            right: -4px;
+            transform: rotate(90deg);
+            width: 27px;
+            height: 19px;
+            border-top-width: 11px;
+            top: 4px;
+        }
+        &::before {
+            left:auto;
+            top: 0;
+            width: 8px;
+            height: 8px;
+            right: 19px;
+        }
+    }
 }
 .rightColorFullLine {
     position: relative;
@@ -46,4 +64,8 @@
         z-index: 1;
         @include colorline(bottom)
     }
+}
+
+.pixelBlue {
+    @include pixel(16, $vialet-color);
 }

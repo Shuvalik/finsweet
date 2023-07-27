@@ -1,3 +1,6 @@
+.titleSectionHolder {
+    width: 60%;
+}
 .campaign {
     padding: 176px 0 33px;
     background-color: $main-color;
@@ -60,5 +63,212 @@
     }
     .threeImgBoxes {
         margin-bottom: 48px;
+    }
+}
+
+.sliderItems {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    .item {
+        padding: 48px 30px 44px 48px;
+        color: $font-color2;
+        background-color: $white-color;
+        flex: 1 0 100%;
+        max-width: 405px;
+        .titleItem {
+            color: $black-color;
+            font-weight: 600;
+            & ~ p {
+                height: 120px;
+                overflow: hidden;
+            }
+        }
+        svg {
+            width: 47px;
+            height: 47px;
+        }
+        &:hover {
+            box-shadow: 0px 60px 68px -30px rgba(255, 161, 85, 0.35);
+        }
+    }
+}
+
+.nubmerListBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 46px;
+    overflow: hidden;
+    & >  li {
+       height: 164px;
+       border: 1px solid $grey-color;
+       position: relative;
+       flex: 1 0 100%;
+       max-width: 395px;
+       padding: 30px 30px 30px 95px;
+       color: $font-color-grey;
+       background-color: $white-color;
+       &::before {
+        content: ' ';
+        height: 2px;
+        width: 50%;
+        position: absolute;
+        top: calc(50% - 2px);
+        left: 0;
+        transform: translateX(-100%);
+        border-top: 2px dashed $grey-color;
+        z-index: -1;
+       }
+       &:last-child, &:first-child {
+            &::after {
+                content: ' ';
+                position: absolute;
+                left: -1px;
+                top: -9px;
+                height: 8px;
+                width: calc(100% + 2px);
+                @include colorline(right);
+            }
+       }
+       &:first-child {
+            &::after {
+                bottom: -9px;
+                top: auto;
+            }
+       }
+       .textHolder {
+        position: relative;
+            &::after {
+            content: ' ';
+            @include circle(47);
+            position: absolute;
+            left: -60px;
+            top: 0;
+            background: #FFF8F1 url(./../../images/sprite.png) 15px 10px no-repeat;
+        }
+        &.Designing {
+            &::after {
+                background-position: 14px -28px;
+            }
+        }
+        &.Development {
+            &::after {
+                background-position: 12px -77px;
+            }
+        }
+        &.Testing {
+            &::after {
+                background-position: 11px -118px;
+            }
+        }
+        &.Deployment {
+            &::after {
+                background-position: 12px -212px;
+            }
+        }
+        &.Maintenance {
+            &::after {
+                background-position: 15px 10px;
+            }
+        }
+       }
+       
+
+
+       .number {
+        position: absolute;
+        top: 12px;
+        right: 16px;
+        font-weight: 600;
+        color: $font-color-lightest;
+        @include font(24, 32);
+       }
+    }
+}
+
+.listSmallImage {
+    display: flex;
+    gap: 12px;
+}
+.slideHolder50 {
+    position: relative;
+    &::before {
+        content: ' ';
+        position: absolute;
+        left: -17px;
+        top: 0;
+        height: 340px;
+        width: 17px;
+        @include colorlineVar2(bottom);
+    }
+    .slide {
+        height: 340px;
+        background-color: $white-color;
+        position: relative;
+        padding: 30px 30px 45px 35px;
+        display: flex;
+        flex-direction: column;
+        blockquote {
+            flex-grow: 1;
+        }
+        &::before {
+            content: ' ';
+            position: absolute;
+            right: 60px;
+            top: 30px;
+            width: 43px;
+            height: 30px;
+            background: url('./../../images/quote.svg') 0 0 no-repeat;
+        }
+        .infoClient {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 500;
+            @include font(14, 20);
+            color: $font-color-grey;
+            .personalInfo {
+                flex-grow: 1;
+            }
+            span {
+                display: block;
+                &.name {
+                    font-weight: 500;
+                    color: $main-color;
+                    margin-bottom: 5px;
+                }
+            }
+            img {
+                float: left;
+                margin-right: 25px;
+                @include circle(38);
+            }
+        }
+    }
+}
+.latersNews {
+    .twoColumns {
+        gap: 32px;
+    }
+}
+
+.subScribe {
+    &::after {
+        width: 89px;
+        height: 51px;
+        border-top-width: 30px;
+        
+    }
+    &::before {
+        width: 30px;
+        height: 30px;
+        top: 51px;
+    }
+    > div {
+        background-color: $blue-color;
+        color: $white-color;
+        height: 333px;
+        padding: 0 96px;
+        align-items: center;
     }
 }
