@@ -55,19 +55,22 @@ p {
   color: $white-color;
   @include font(56, 68);
   font-weight: 600;
-  padding-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+  padding-top: 51px;
   @include pixel(24, $grey-dark-color);
 }
 .h2 {
   font-weight: 600;
   @include font(48, 58);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  &.pixelBlue {
+    padding-top: 30px;
+  }
 }
 .h3 {
   font-weight: 600;
   @include font(36, 54);
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .h4 {
   font-weight: 600;
@@ -79,14 +82,17 @@ p {
   @include font(14, 20);
   letter-spacing: 3px;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 .subTitle {
   font-weight: 500;
   @include font(18, 28);
+  margin-bottom: 15px;
 }
 .titleBox {
   color: $black-color;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 .addText {
     color: $black-color;

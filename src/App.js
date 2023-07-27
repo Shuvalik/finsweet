@@ -244,9 +244,9 @@ const support = svgSprite + '#support';
                     The company leads entire webdesign process from concept to delivery.
                   </h2>
                 </div>
-                <div>
+                <div className="textSide">
                   <h3 className="h3">The Era Of Technology.</h3>
-                  <p>We envision our company as the go-to partner for businesses and organizations seeking to explore and express their “why” through their digital presence. By infusing our designs with the essence of our client’s mission and values, we strive to create web experiences that resonate with audiences, inspiring them to act and engage.</p>
+                  <p>We envision our company as the go-to partner for businesses and organizations seeking to explore and express their “why” through their digital presence.</p>
                 </div>
               </div>
               <div className="threeImgBoxes rightColorFullLine">
@@ -285,15 +285,58 @@ const support = svgSprite + '#support';
           </section>
 
           <section className="bg-turquoise">
-            <div className="container twoColumns">
+            <div className="container twoColumns approach">
+              <div>
                   <p className="sectionTitle">Our Approach</p>
                   <h2 className="h2">
-                    The company leads entire website process from concept to development.
+                    Our commitment to composable digital experiences gives brands the creativity and control.
                   </h2>
                   <p>
-                    Effective web development goes beyond coding and design; it requires a well-crafted digital strategy that aligns with your business objectives. With technology evolving rapidly, website re-design becomes essential to incorporate the latest functionalities and trends, enhancing user experience and satisfaction. A fresh, intuitive, and responsive design ensures your website meets the evolving needs of your audience and stays competitive in the digital landscape.
+                    With a laser focus on flexible, composable technology stacks, we empower customer-first retailers, manufacturers and brands to deliver remarkable products and services at scale. 
                   </p> 
-                  TO DO our works
+              </div>
+              <div className="verticalListBox pixelBlue">
+                <div className="item">
+                  <svg>
+                    <use xlinkHref={design} />
+                  </svg>
+                  <div>
+                    <p className="titleItem">
+                      Our mission
+                    </p>
+                    <p>
+                    To deliver solutions that give measurable results through speed-to-market.
+                    </p>
+                  </div>
+                </div>
+                <div className="item">
+                  <svg>
+                    <use xlinkHref={settings} />
+                  </svg>
+                  <div>
+                    <p className="titleItem">
+                      Our Culture
+                    </p>
+                    <p>
+                    We strongly believe if we create a place where we love to work, then we can revel in being work.
+                    </p>
+                  </div>
+                </div>
+                <div className="item">
+                  <svg>
+                    <use xlinkHref={support} />
+                  </svg>
+                  <div>
+                    <p className="titleItem">
+                      Our vision
+                    </p>
+                    <p>
+                    To be a major force in digital engineering in the UK, Europe and the Middle East.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </section>
 
@@ -464,11 +507,11 @@ const support = svgSprite + '#support';
           </section>
 
           <section className="bg-violet">
-              <div className="container twoColumns ">
+              <div className="container twoColumns commentsCustomer">
                 <div>
                   <h2 className="h2 pixelBlue">Our customers love what we do</h2>
                   <p className="subTitle">Transform your idea into reality with finsweet</p>
-                  <p>We have over 15 years of expertise delivering bespoke consulting, design, architecture and build services using world-leading technology and thinking.</p>
+                  <p>We have over 15 years of expertise delivering design, architecture and build services using world-leading technology and thinking.</p>
                   <ul className="listSmallImage">
                     <li>
                       <img src={customerImg1} alt="" />

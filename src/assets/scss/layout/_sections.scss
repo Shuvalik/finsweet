@@ -1,13 +1,26 @@
 .titleSectionHolder {
-    width: 60%;
+    width: 61%;
+    .stylishCornerTreeColor {
+        margin-top: 35px;
+    }
 }
 .campaign {
-    padding: 176px 0 33px;
+    padding: 176px 0 22px;
     background-color: $main-color;
     color: $font-color;
+    .twoColumns {
+        align-items: center;
+        p {
+            margin-bottom: 31px;
+            margin-right: 110px;
+        }
+        .btn {
+            margin-bottom: 101px;
+        }
+    }
     .imageHolder {
-        aspect-ratio: 563/632;
-        max-width: 563px;
+        aspect-ratio: 563/618;
+        max-width: 578px;
         border: 0;
         border-right: 24px;
         border-style: solid;
@@ -22,11 +35,11 @@
         }
     }
     .clientLists {
-        padding-top: 50px;
+        padding-top: 39px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 40px;
+        gap: 60px;
         font-weight: 500;
         span {
             @include font(14, 20);
@@ -57,21 +70,70 @@
 }
 
 .aboutUs {
+    padding-top: 120px;
     .twoColumns {
-        gap: 50px;
-        align-items: center;
+        .textSide {
+            padding: 44px 0 47px 90px;
+        }
     }
     .threeImgBoxes {
         margin-bottom: 48px;
     }
+    .arrowLink {
+        align-self: center;
+        margin-top: 13px;
+        &::after {
+            width: 24px;
+
+        }
+    }
 }
 
+.approach {
+    align-items: center;
+    .verticalListBox {
+        padding-top: 16px;
+        max-width: 515px;
+        &::after {
+            content: ' ';
+            position: relative;
+            left: 0;
+            bottom: 0;
+            height: 8px;
+            width: 100%;
+            @include colorline(right);
+            display: block;
+
+        }
+        .item {
+            padding: 36px 20px 4px 32px;
+            color: $font-color2;
+            background-color: $white-color;
+            display: flex;
+            gap: 16px;
+            & ~ .item {
+                margin-top: 12px;
+            }
+            .titleItem {
+                color: $black-color;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+            svg {
+                width: 47px;
+                height: 47px;
+                flex: 1 0 auto;
+            }
+        }
+    }
+}
 .sliderItems {
     display: flex;
     justify-content: space-between;
     gap: 32px;
+    padding-top: 80px;
     .item {
-        padding: 48px 30px 44px 48px;
+        padding: 48px 22px 44px 48px;
         color: $font-color2;
         background-color: $white-color;
         flex: 1 0 100%;
@@ -79,14 +141,20 @@
         .titleItem {
             color: $black-color;
             font-weight: 600;
+            margin-bottom: 9px;
             & ~ p {
-                height: 120px;
+                height: 96px;
                 overflow: hidden;
             }
+        }
+        .arrowLink {
+            padding-right: 35px;
         }
         svg {
             width: 47px;
             height: 47px;
+            display: block;
+            margin-bottom: 20px;
         }
         &:hover {
             box-shadow: 0px 60px 68px -30px rgba(255, 161, 85, 0.35);
@@ -98,8 +166,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 46px;
+    gap: 47px;
     overflow: hidden;
+    padding-top: 40px;
     & >  li {
        height: 164px;
        border: 1px solid $grey-color;
@@ -143,8 +212,8 @@
             content: ' ';
             @include circle(47);
             position: absolute;
-            left: -60px;
-            top: 0;
+            left: -63px;
+            top: 2px;
             background: #FFF8F1 url(./../../images/sprite.png) 15px 10px no-repeat;
         }
         &.Designing {
@@ -164,12 +233,12 @@
         }
         &.Deployment {
             &::after {
-                background-position: 12px -212px;
+                background-position: 12px -162px;
             }
         }
         &.Maintenance {
             &::after {
-                background-position: 15px 10px;
+                background-position: 12px -212px;
             }
         }
        }
@@ -178,8 +247,8 @@
 
        .number {
         position: absolute;
-        top: 12px;
-        right: 16px;
+        top: 11px;
+        right: 14px;
         font-weight: 600;
         color: $font-color-lightest;
         @include font(24, 32);
@@ -190,9 +259,18 @@
 .listSmallImage {
     display: flex;
     gap: 12px;
+    margin-bottom: 14px;
+}
+.commentsCustomer {
+    gap: 65px;
+    padding-top: 7px;
+    > div {
+        flex: 1 0;
+    }
 }
 .slideHolder50 {
     position: relative;
+    margin-top: 13px;
     &::before {
         content: ' ';
         position: absolute;
@@ -206,7 +284,7 @@
         height: 340px;
         background-color: $white-color;
         position: relative;
-        padding: 30px 30px 45px 35px;
+        padding: 48px 65px 42px 40px;
         display: flex;
         flex-direction: column;
         blockquote {
@@ -215,8 +293,8 @@
         &::before {
             content: ' ';
             position: absolute;
-            right: 60px;
-            top: 30px;
+            right: 39px;
+            top: -19px;
             width: 43px;
             height: 30px;
             background: url('./../../images/quote.svg') 0 0 no-repeat;
@@ -224,6 +302,7 @@
         .infoClient {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             font-weight: 500;
             @include font(14, 20);
             color: $font-color-grey;
@@ -235,12 +314,13 @@
                 &.name {
                     font-weight: 500;
                     color: $main-color;
-                    margin-bottom: 5px;
+                    @include font(16, 24);
                 }
             }
             img {
                 float: left;
-                margin-right: 25px;
+                margin-right: 18px;
+                margin-top: 5px;
                 @include circle(38);
             }
         }
@@ -249,10 +329,19 @@
 .latersNews {
     .twoColumns {
         gap: 32px;
+        padding-top: 31px;
+        & > div {
+            flex: 1 0;
+        }
     }
 }
 
 .subScribe {
+    .rightColorFullLine {
+        &::after {
+            width: 23px;
+        }
+    }
     &::after {
         width: 89px;
         height: 51px;
@@ -260,7 +349,7 @@
         
     }
     &::before {
-        width: 30px;
+        width: 31px;
         height: 30px;
         top: 51px;
     }
@@ -270,5 +359,9 @@
         height: 333px;
         padding: 0 96px;
         align-items: center;
+    }
+    form {
+        width: 100%;
+        padding: 10px 21px 0 65px;
     }
 }

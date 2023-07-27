@@ -1,15 +1,23 @@
 .footer {
     font-weight: 500;
     .topSide {
-        padding: 50px 0 35px;
+        padding: 67px 0 60px;
+        .h2 {
+            max-width: 80%;
+            margin-bottom: 40px;
+        }
     }
     .subTitle {
         font-weight: 600;
         @include font(24, 36);
-        margin-bottom: 20px;
+        margin-bottom: 27px;
     }
     address {
         font-style: normal;
+        width: 38%;
+        p {
+            margin-bottom: 5px;
+        }
         a {
             color: $main-color;
             @include font(18, 28);
@@ -33,15 +41,27 @@
         }
         .separate {
             border-top: 1px solid rgba(0, 0, 0, 0.08);
-            padding: 15px 50px 0 0;
+            padding: 15px 0 0 0;
+            margin-top: 12px;
+            font-weight: 600;
+            @include font(14, 20);
         }
     }
     .navSection {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding-bottom: 5px;
         .threeColumns {
-            flex-grow: 1;
+            padding-left: 17px;
+            padding-top: 15px;
+            justify-content: start;
+            & > nav {
+                width: 35%;
+                &.main-nav {
+                    width: 29%;
+                }
+            }
             a {
                 @include font(14, 20);
                 color: $main-color;
@@ -70,9 +90,21 @@
             .arrowLink {
                 @include font(16, 24);
                 color: $main-color;
+                padding-right: 28px;
             }
         }
-        .main-nav a, .titleMenu {
+        nav li {
+            margin-bottom: 8px;
+        }
+        .main-nav li {
+            margin-bottom: 12px;
+            a {
+                font-weight: 600;
+                @include font(16, 28);
+            }
+        }
+        .titleMenu {
+            margin-bottom: 7px;
             font-weight: 600;
             @include font(16, 28);
         }
@@ -88,6 +120,7 @@
             height: 80px;
             .copyRight {
                 flex-grow: 1;
+                margin: 0 0 0 15px;
             }
         }
     }
