@@ -16,7 +16,7 @@ function Service() {
                     We Build Software Solutionthat Solve Clients Business Challenges
                   </h1>
                   <p>
-                    We can deliver good alternatives to rigid IT solutions because we firmly believe each client deserves an individual approach.
+                    We can deliver good alternatives to rigid IT solutions because we firmly believe each client deserves an individual approach. 
                   </p>
                   <div className="stylishCornerTreeColor">
                     <button className="btn arrowLink">Request A Quote</button>
@@ -45,7 +45,7 @@ function Service() {
           </section>
 
           <section className="bg-violet servicesPage">
-            <div className="container stylishCornerTreeColor rightCorner">
+            <div className="container stylishCornerTreeColor rightCorner smaller">
               <div className="titleSectionHolder">
                   <p className="sectionTitle">Our Process</p>
                   <h2 className="h2">
@@ -145,7 +145,7 @@ function Service() {
                             Best in class tech support for your company. We become your tech backbone.
                         </h3>
                         <p>
-                            We take time to review site traffic with an emphasis on visitor trends, traffic sources, content review, goals, search, and campaign tracking.
+                            We take time to review site traffic with an emphasis on visitor trends, traffic sources, content review, goals, search, and campaign tracking. Performance is crucial for any mobile app’s success. Our development team employs robust optimization techniques to enhance your app’s speed and responsiveness.
                         </p>
                     </div>
                 </div>
@@ -164,7 +164,7 @@ function Service() {
                             Bring your ideas to reality with certified team of developers, working with latest technologies.
                         </h3>
                         <p>
-                            Web development encompasses creating and maintaining websites involving various technologies and programming languages. Skilled developers use HTML, CSS, and JavaScript to build visually appealing and functional sites.
+                            Web development encompasses creating and maintaining websites involving various technologies and programming languages. Skilled developers use HTML, CSS, and JavaScript to build visually appealing and functional sites. We  provede development services in today’s digital landscape.
                         </p>
                     </div>
                 </div>
@@ -179,7 +179,7 @@ function Service() {
                             User Experience Design
                         </h4>
                         <h3 className="h3">
-                            Perfecting interface design to drive user engagement, boost conversion rates and foster customer loyalty.  
+                            Perfecting design to drive user engagement, conversion rates and customer loyalty.  
                         </h3>
                         <p>
                            A well-designed interface is the key to a successful website or application, as it enhances user experience and promotes user interaction. Our expert designers combine creativity and functionality to create interfaces that leave a lasting impression.
@@ -197,7 +197,7 @@ function Service() {
                             Digital Marketing & Strategy
                         </h4>
                         <h3 className="h3">
-                             Our team of experts will help you develop a strategy that meets your goals.   
+                             Our team will help you develop a strategy that meets your goals.   
                         </h3>
                         <p>
                            A robust digital strategy, complemented by solid market intelligence, is integral to successful web development in the digital era. One key aspect of this strategy often involves website re-design, ensuring that your online presence remains dynamic, relevant, and engaging.

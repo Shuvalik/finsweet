@@ -11,11 +11,11 @@ import newsImg1 from './../assets/images/last-news-img1.jpg';
 
 import newsImg2 from './../assets/images/last-news-img2.jpg';
 
-import svgSprite from './../assets/images/icons-sprite.svg'
+import svgSprite from './../assets/images/icons-sprite.svg';
 //import './App.css';
 
 
-function Home () {
+function Home() {
 
 const garniture = svgSprite + '#garniture';
 const settings = svgSprite + '#settings';
@@ -390,7 +390,7 @@ const support = svgSprite + '#support';
           </section>
 
           <section>
-            <div className="container stylishCornerTreeColor rightCorner">
+            <div className="container stylishCornerTreeColor rightCorner smaller">
               <div className="titleSectionHolder">
                   <p className="sectionTitle">Our Process</p>
                   <h2 className="h2">

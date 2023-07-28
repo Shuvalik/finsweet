@@ -6,6 +6,7 @@ import './assets/scss/styles.scss';
 import Default from './layouts/Default';
 import Home from './pages/Home';
 import Service from './pages/Service';
+import Company from './pages/Company';
 
 function App() {
   const hash = useLocation().hash;
@@ -23,6 +24,7 @@ function App() {
         <Route path='/' element={<Default />}>
           <Route index element={<Home />} />
           <Route path='service/' element={<Service />} />
+          <Route path='company/' element={<Company />} />
         </Route>
       </Routes>
     </div>

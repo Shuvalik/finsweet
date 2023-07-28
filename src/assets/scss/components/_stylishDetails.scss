@@ -34,21 +34,41 @@
 
     }
     &.rightCorner {
-        &::after {
-            left:auto;
-            right: -4px;
-            transform: rotate(90deg);
-            width: 27px;
-            height: 19px;
-            border-top-width: 11px;
-            top: 26px;
+        &.bigger {
+            &::after {
+                left:auto;
+                right: 2px;
+                top: 10px;
+                transform: rotate(90deg);
+                width: 52px;
+                height: 34px;
+                border-top-width: 20px;
+            }
+            &::before {
+                left:auto;
+                top: 1px;
+                right: 45px;
+                width: 14px;
+                height: 14px;
+            }
         }
-        &::before {
-            left:auto;
-            top: 22px;
-            width: 8px;
-            height: 8px;
-            right: 19px;
+        &.smaller {
+            &::after {
+                left:auto;
+                right: -4px;
+                transform: rotate(90deg);
+                width: 27px;
+                height: 19px;
+                border-top-width: 11px;
+                top: 26px;
+            }
+            &::before {
+                left:auto;
+                top: 22px;
+                width: 8px;
+                height: 8px;
+                right: 19px;
+            }
         }
     }
 }
@@ -65,7 +85,24 @@
         @include colorline(bottom)
     }
 }
+.topRightColorLine {
+    position: relative;
+    margin-top: 40px;
+    &:after {
+        content: ' ';
+        position: absolute;
+        right: 0;
+        top: -24px;
+        width: 346px;
+        height: 24px;
+        @include colorlineVar2(right)
+    }
+}
 
 .pixelBlue {
     @include pixel(16, $vialet-color);
+}
+
+.pixelOrange {
+    @include pixel(28, $orange-light-color);
 }
