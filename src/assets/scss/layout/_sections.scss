@@ -5,7 +5,7 @@
     }
 }
 .campaign {
-    padding: 176px 0 22px;
+    padding-bottom: 22px;
     background-color: $main-color;
     color: $font-color;
     .twoColumns {
@@ -363,5 +363,56 @@
     form {
         width: 100%;
         padding: 10px 21px 0 65px;
+    }
+}
+
+//service page
+.servicesPageCampaign {
+    .twoColumns {
+        align-items: center;
+        .btn {
+            margin-top: 41px;
+        }
+    }
+    .navOnPage {
+        padding-top: 13px;
+        li {
+            margin-bottom: 16px;
+        }
+        .arrowLink {
+            color: $main-color;
+            font-weight: 600;
+            @include font(24, 36);
+            &::before, &::after {
+                display: none;
+            }
+            &:hover {
+                &::before, &::after {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.servicesPage.bg-violet {
+    z-index: -1;
+    position: relative;
+}
+.servicePageContent {
+
+    .imageAndText {
+        .twoColumns {
+            align-items: center;
+        }
+        .revert {
+            flex-direction: row-reverse;
+        }
+        .imageHolder {
+            aspect-ratio: 516/539;
+            width: 100%;
+            max-width: 516px;
+            align-self: flex-start;
+            margin-top: -96px;
+        }
     }
 }
