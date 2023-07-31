@@ -3,6 +3,9 @@
     position: relative;
     font-weight: 500;
     color: $font-link-color;
+    &.read-more {
+      padding-right: 36px;
+    }
     &::after {
         content: ' ';
         width: 20px;

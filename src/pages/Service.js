@@ -223,10 +223,8 @@ function Service() {
                     </div>
                 </div>
             </section>
-          </div>
-
-          
-          <section>
+            
+                
             <div className="container stylishCornerTreeColor subScribe">
               <div className="twoColumns rightColorFullLine">
                 <div>
@@ -241,7 +239,9 @@ function Service() {
                 </form>
               </div>
             </div>
-          </section>
+          </div>
+
+          
         </>
     )
 }

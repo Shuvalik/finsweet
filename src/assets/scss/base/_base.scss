@@ -81,6 +81,9 @@ strong {
   @include font(24, 36);
   margin-bottom: 20px;
 }
+.smodzi {
+  font-family: 'emodzi';
+}
 .sectionTitle {
   font-weight: 500;
   @include font(14, 20);
@@ -110,6 +113,7 @@ strong {
   aspect-ratio: 1270/406;
   width: 100%;
   padding-top: 40px;
+  margin-bottom: 96px;
 }
 blockquote {
   font-weight: 600;
@@ -132,4 +136,7 @@ input {
 }
 .bg-turquoise {
   background-color: $turquoise-color;
+}
+.bg-grey {
+  background-color: $grey-lightest-color;
 }

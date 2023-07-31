@@ -141,18 +141,14 @@ function Company() {
               <div className="imageHolderFullWidth">
                 <img src={visionImg} alt="" />
               </div>
-            </div>
-          </section>
-
-          <section>
-            <div className="container">
-              <div className="titleSectionHolder">
+              
+              <div className="titleSectionHolder subSection">
                   <p className="sectionTitle">MEET OUR TEAM</p>
-                  <h3 className="h3">
+                  <h2 className="h2">
                     Teamwork is the only way we work 
-                  </h3>
+                  </h2>
                   <p>
-                    Our commitment to composable digital experiences gives brands the creativity and control to do more cool stuff, that their customers love.
+                    Our commitment to composable digital experiences gives brands the creativity and control to do more cool stuff, that their customers love. Join us on this exciting journey to the future of digital interaction.
                   </p>
               </div>
               <div className="listImages">
@@ -252,6 +248,22 @@ function Company() {
                         </ul>
                     </div>
                 </div>
+              </div>
+            </div>
+
+            
+            <div className="container stylishCornerTreeColor subScribe">
+              <div className="twoColumns rightColorFullLine">
+                <div>
+                  <p className="sectionTitle">
+                    NEWSLETTER
+                  </p>
+                  <h3 className="h3">Subscribe our News Letter to get Latest Updates.</h3>
+                </div>
+
+                <form action="/" id="subScribe">
+                  <input type="email" name="" id="" placeholder='Paresh@Pixeto.com' />
+                </form>
               </div>
             </div>
           </section>

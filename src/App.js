@@ -7,6 +7,9 @@ import Default from './layouts/Default';
 import Home from './pages/Home';
 import Service from './pages/Service';
 import Company from './pages/Company';
+import Career from './pages/Career';
+import News from './pages/News';
+import Contact from './pages/Contact-us';
 
 function App() {
   const hash = useLocation().hash;
@@ -25,6 +28,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path='service/' element={<Service />} />
           <Route path='company/' element={<Company />} />
+          <Route path='career/' element={<Career />} />
+          <Route path='news/' element={<News />} />
+          <Route path='contact-us/' element={<Contact />} />
         </Route>
       </Routes>
     </div>

@@ -56,3 +56,12 @@
         display: block;
     }
 }
+.authorInfo {
+    span {
+        display: block;
+    }
+    .publishDate {
+        color: $font-color;
+        @include font(14, 20);
+    }
+}

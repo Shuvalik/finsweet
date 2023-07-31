@@ -37,7 +37,7 @@
         &.bigger {
             &::after {
                 left:auto;
-                right: 2px;
+                right: -9px;
                 top: 10px;
                 transform: rotate(90deg);
                 width: 52px;
@@ -47,7 +47,7 @@
             &::before {
                 left:auto;
                 top: 1px;
-                right: 45px;
+                right: 34px;
                 width: 14px;
                 height: 14px;
             }

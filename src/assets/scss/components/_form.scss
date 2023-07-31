@@ -1,0 +1,38 @@
+label {
+    font-weight: 500;
+    @include font(14, 20);
+    color: $font-color-grey;
+}
+input {
+    width: 100%;
+    color: $main-color;
+    border: 0;
+    border-bottom: 1px solid $font-color-lightest;
+    margin-bottom: 24px;
+    padding: 7px 0 5px;
+}
+textarea {
+    width: 100%;
+    color: $main-color;
+    border: 0;
+    border-bottom: 1px solid $font-color-lightest;
+    margin-bottom: 24px;
+    font-family: "Poppins", sans-serif;
+    @include font(16, 24);
+    padding: 10px 0 5px;
+    resize: none;
+    height: 100px;
+    &::placeholder {
+        font-family: "Poppins", sans-serif;
+        @include font(16, 24);
+        color: $font-color-grey;
+    }
+}
+input:focus, textarea:focus {
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid $main-color;
+}
+form {
+    padding-top: 40px;
+}
