@@ -37,8 +37,8 @@ function Company() {
               </div>
               
                 <div className="twoColumns subColorSection">
-                    <div className="pixelBlue">
-                        <p><strong>Our Story 👇</strong></p>
+                    <div className="pixelViolete">
+                        <p><strong>Our Story <span className="smodzi">👇</span></strong></p>
                         <h3 className="h3">From Startups to Titans of Industry
                         </h3>
                         <p>

@@ -70,6 +70,9 @@ strong {
   &.pixelBlue {
     padding-top: 30px;
   }
+  &.pixelViolete {
+    padding-top: 30px;
+  }
 }
 .h3 {
   font-weight: 600;
@@ -118,14 +121,6 @@ strong {
 blockquote {
   font-weight: 600;
   @include font(24, 36);
-}
-input {
-  width: 100%;
-  padding: 20px 30px;
-  font-family: $base-font;
-  font-weight: 500;
-  color: $font-color;
-  @include font(16, 24);
 }
 /**/
 .bg-orange {

@@ -479,7 +479,7 @@ const support = svgSprite + '#support';
           <section className="bg-violet">
               <div className="container twoColumns commentsCustomer">
                 <div>
-                  <h2 className="h2 pixelBlue">Our customers love what we do</h2>
+                  <h2 className="h2 pixelViolete">Our customers love what we do</h2>
                   <p className="subTitle">Transform your idea into reality with finsweet</p>
                   <p>We have over 15 years of expertise delivering design, architecture and build services using world-leading technology and thinking.</p>
                   <ul className="listSmallImage">
@@ -515,7 +515,7 @@ const support = svgSprite + '#support';
           
           <section className="bg-turquoise">
             <div className="container latersNews">
-              <h2 className="h2 pixelBlue">Read our latest blogs & news</h2>
+              <h2 className="h2 pixelViolete">Read our latest blogs & news</h2>
               <div className="twoColumns">
                 <div className="leftImageBox">
                   <div className="imgHolder">

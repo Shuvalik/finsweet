@@ -100,6 +100,9 @@
 }
 
 .pixelBlue {
+    @include pixel(16, $blue-color);
+}
+.pixelViolete {
     @include pixel(16, $vialet-color);
 }
 

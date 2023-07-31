@@ -20,9 +20,12 @@
 	}
 }
 @mixin colorline($direction) {
-	background: linear-gradient(to $direction, $orange-color 25%, $orange-light-color 25%, $orange-light-color 75%, $vialet-color 75%, $vialet-color 100%);
+	background: linear-gradient(to $direction, $orange-color 25%, $orange-light-color 25%, $orange-light-color 75%, $blue-color 75%, $blue-color 100%);
 }
 
 @mixin colorlineVar2($direction) {
-	background: linear-gradient(to $direction, $orange-color 25%, $orange-light-color 25%, $orange-light-color 85%, $vialet-color 85%, $vialet-color 100%);
+	background: linear-gradient(to $direction, $orange-color 25%, $orange-light-color 25%, $orange-light-color 85%, $blue-color 85%, $blue-color 100%);
+}
+@mixin colorlineVar3($direction) {
+	background: linear-gradient(to $direction, $orange-light-color 29%, $blue-lightest-color 29%, $blue-lightest-color 50%, $orange-color 50%, $orange-color 100%);
 }

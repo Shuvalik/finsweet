@@ -28,14 +28,14 @@
         border: 0;
         border-right: 24px;
         border-style: solid;
-        border-image: linear-gradient($orange-color 12%, $orange-light-color 12%, $orange-light-color 47%, $vialet-color 47%, $vialet-color 54%, transparent 54%, transparent 100%) 1;
+        border-image: linear-gradient($orange-color 12%, $orange-light-color 12%, $orange-light-color 47%, $blue-color 47%, $blue-color 54%, transparent 54%, transparent 100%) 1;
         padding-left: 16px;
         img {
             display: block;
             border: 0;
             border-left: 16px;
             border-style: solid;
-            border-image: linear-gradient(transparent 84%, $orange-color 84%, $orange-color 88%, $orange-light-color 88%, $orange-light-color 98%, $vialet-color 98%, $vialet-color 100%) 1;
+            border-image: linear-gradient(transparent 84%, $orange-color 84%, $orange-color 88%, $orange-light-color 88%, $orange-light-color 98%, $blue-color 98%, $blue-color 100%) 1;
         }
     }
     .clientLists {
@@ -361,7 +361,7 @@
         top: 51px;
     }
     > div {
-        background-color: $blue-color;
+        background-color: $vialet-color;
         color: $white-color;
         height: 333px;
         padding: 0 96px;
@@ -436,7 +436,7 @@
 .subColorSection {
     padding: 96px 0 0;
     gap: 16px;
-    .pixelBlue {
+    .pixelViolete {
         padding-top: 28px;
         padding-right: 60px;
     }
@@ -682,5 +682,88 @@
                 flex-grow: 1;
             }
         }
+    }
+}
+//contact
+#contact {
+    padding-top: 40px;
+    max-width: 57%;
+    .stylishCornerTreeColor {
+        margin-top: 25px;
+    }
+}
+.contactFirstSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: flex-start;
+}
+.contact-teaser {
+    background-color: $vialet-color;
+    padding: 83px 150px 118px 93px;
+    position: relative;
+    color: $white-color;
+    margin-top: 24px;
+    width: 42%;
+    @include font(18, 28);
+    font-weight: 500;
+    a {
+        color: $white-color;
+        @include font(18, 28);
+        font-weight: 500;
+    }
+    &::before {
+        content: '';
+        height: 183px;
+        width: 23px;
+        left: -23px;
+        bottom: 0;
+        position: absolute;
+        @include colorlineVar2(bottom);
+    }
+    &::after {
+        content: '';
+        height: 23px;
+        width: 133px;
+        top: -23px;
+        right: 0;
+        position: absolute;
+        @include colorlineVar3(right);
+    }
+    address {
+        font-style: normal;
+        p > span {
+            display: block;
+        }
+        .partTitle {
+            color: $white-color;
+            opacity: 0.6;
+            @include font(14, 20);
+            padding-bottom: 11px;
+            margin-bottom: 13px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        .addInfo, .addInfo a {
+            color: $white-color;
+            opacity: 0.6;
+            @include font(14, 20);
+        }
+    }
+    .sotial-links {
+        width: 144px;
+        padding-top: 30px;
+        svg path {
+            fill: #e0e2ff;
+        }
+        a:hover svg path {
+            fill: $white-color;
+        }
+    }
+}
+#map {
+    padding-top: 96px;
+    .imgHolder {
+        aspect-ratio: 1282/409;
+        width: 100%;
     }
 }

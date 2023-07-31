@@ -4,6 +4,9 @@ label {
     color: $font-color-grey;
 }
 input {
+    font-family: $base-font;
+    font-weight: 500;
+    @include font(16, 24);
     width: 100%;
     color: $main-color;
     border: 0;
@@ -33,6 +36,12 @@ input:focus, textarea:focus {
     outline: none;
     border-bottom: 1px solid $main-color;
 }
-form {
-    padding-top: 40px;
+
+#subScribe input {
+  width: 100%;
+  padding: 20px 30px;
+  font-family: $base-font;
+  font-weight: 500;
+  color: $font-color;
+  @include font(16, 24);
 }
