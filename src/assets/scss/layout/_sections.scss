@@ -30,6 +30,9 @@
         border-style: solid;
         border-image: linear-gradient($orange-color 12%, $orange-light-color 12%, $orange-light-color 47%, $blue-color 47%, $blue-color 54%, transparent 54%, transparent 100%) 1;
         padding-left: 16px;
+        @media only screen and (max-width: 1350px) {
+            max-width: 50%;
+        }
         img {
             display: block;
             border: 0;
@@ -139,6 +142,7 @@
     justify-content: space-between;
     gap: 32px;
     padding-top: 80px;
+    overflow: hidden;
     .item {
         padding: 48px 22px 44px 48px;
         color: $font-color2;
@@ -180,11 +184,15 @@
        height: 164px;
        border: 1px solid $grey-color;
        position: relative;
-       flex: 1 0 100%;
-       max-width: 395px;
        padding: 30px 30px 30px 95px;
        color: $font-color-grey;
        background-color: $white-color;
+       flex: 1 0 100%;
+       max-width: 395px;
+            @media only screen and (max-width: 1350px) {
+                    max-width: calc((100% - 94px) / 3);
+                    height: auto;
+                }
        &::before {
         content: ' ';
         height: 2px;
@@ -944,7 +952,7 @@
 //private polici
 .textPageWithLeftLine {
     position: relative;
-    padding: 96px 0 0;
+    padding: 96px 0 71px;
     &:after {
         content: ' ';
         position: absolute;
@@ -956,14 +964,24 @@
     }
 }
 #privatPolicy {
+    margin-bottom: 24px;
     .pixelOrange::before {
         width: 24px;
         height: 24px;
     }
     .titleSectionHolder.pixelOrange {
         padding-top: 50px;
+        margin-bottom: 46px;
+        &::before {
+            width: 24px;
+            height: 24px;
+        }
     }
     .h2 {
         margin-bottom: 7px;
+    }
+    .contentHolder {
+        margin: 0 auto;
+        width: 66%;
     }
 }
