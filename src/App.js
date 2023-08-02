@@ -10,6 +10,10 @@ import Company from './pages/Company';
 import Career from './pages/Career';
 import News from './pages/News';
 import Contact from './pages/Contact-us';
+import CareerPosition from './pages/CareerPositionSubPage';
+import NewsDetail from './pages/NewsDetailSubPage';
+import PeopleDetails from './pages/CompanyPeopleSubPage';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   const hash = useLocation().hash;
@@ -28,9 +32,13 @@ function App() {
           <Route index element={<Home />} />
           <Route path='service/' element={<Service />} />
           <Route path='company/' element={<Company />} />
+          <Route path='company/people/' element={<PeopleDetails />} />
           <Route path='career/' element={<Career />} />
+          <Route path='career/position/' element={<CareerPosition />} />
           <Route path='news/' element={<News />} />
+          <Route path='news/details' element={<NewsDetail />} />
           <Route path='contact-us/' element={<Contact />} />
+          <Route path='privacy-policy/' element={<PrivacyPolicy />} />
         </Route>
       </Routes>
     </div>

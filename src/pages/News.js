@@ -5,25 +5,25 @@ function News() {
         <section>
             <div className="container">
                 <div className="stylishCornerTreeColor rightCorner bigger">
-                <div className="titleSectionHolder mainNews pixelOrange">
-                    <p className="sectionTitle">Trending</p>
-                    <h1 className="h2">
-                        Breaking the code How did we build our Figma plugin 
-                    </h1>
-                    <p>
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The Maker is a decentralized. We aim to attain the.
-                    </p>
-                    <p>
-                        <a href="/" className="arrowLink read-more">Read More</a>
-                    </p>
-                    <div className="authorInfo">
-                            <span className="name">Andrew Jonson</span>
-                            <span className="publishDate">Posted on 27th January 2021</span>
+                    <div className="titleSectionHolder mainNews pixelOrange">
+                        <p className="sectionTitle">Trending</p>
+                        <h1 className="h2">
+                            Breaking the code How did we build our Figma plugin 
+                        </h1>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The Maker is a decentralized. We aim to attain the.
+                        </p>
+                        <p>
+                            <a href="/" className="arrowLink read-more">Read More</a>
+                        </p>
+                        <div className="authorInfo">
+                                <span className="name">Andrew Jonson</span>
+                                <span className="publishDate">Posted on 27th January 2021</span>
+                        </div>
+                        <div className="imageHolder rightColorFullLine">
+                            <img src={img1} alt="" />
+                        </div>
                     </div>
-                    <div className="imageHolder rightColorFullLine">
-                        <img src={img1} alt="" />
-                    </div>
-                </div>
                 </div>
 
                 <div className="resentListNews">

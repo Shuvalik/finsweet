@@ -767,3 +767,203 @@
         width: 100%;
     }
 }
+
+//career sub page
+.positionFirstSection {
+    display: flex;
+    justify-content: space-between;
+}
+.colorTeaser {
+    background-color: #FFE0C7;
+    color: $black-color;
+    padding: 82px 110px 60px 80px;
+    ul {
+        padding-top: 5px;
+        li {
+            padding-bottom: 16px;
+        }
+    }
+}
+#tabContainer {
+    margin-top: 96px;
+    color: $black-color;
+    .tabTitle {
+        border-bottom: 4px solid #E0F1F2;
+        display: flex;
+        justify-content: center;
+        gap: 96px;
+        li {
+            padding: 44px 0 29px;
+            cursor: pointer;
+            font-weight: 600;
+            @include font(24, 36);
+            &.active, &:hover {
+                color: $blue-color-font;
+                border-bottom: 4px solid $blue-color-font;
+                margin-bottom: -4px;
+            }
+
+        }
+    }
+    .tabContent {
+        padding: 97px 0 70px;
+        margin: 0 auto;
+        width: 66%;
+        > div {
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
+        ul li {
+            list-style-type: disc;
+            margin-bottom: 24px;
+        }
+    }
+}
+#applyNow {
+    padding: 96px 0 0;
+    h3 {
+        margin-bottom: 30px;
+    }
+    form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 32px;
+        .imputHolder {
+            width: calc(50% - 16px);
+            position: relative;
+        }
+        .textareaHolder, .checkboxHolder {
+            width: 100%;
+            position: relative;
+        }
+        .checkboxHolder {
+            margin-top: -8px;
+        }
+        input, textarea {
+            border: 0;
+            background: $vialet-lightest-color;
+            color: #4e4f5d;
+            padding: 42px 40px 30px;
+            margin-bottom: 0;
+        }
+        textarea {
+            height: 100px;
+            height: 225px;
+            &::placeholder {
+                @include font(18, 28);
+                font-weight: 500;
+                position: absolute;
+                left: 40px;
+                top: 36px;
+            }
+        }
+        label  {
+            @include font(18, 28);
+            font-weight: 500;
+            position: absolute;
+            left: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+        input[type="checkbox"] {
+            width: 36px;
+            height: 36px;
+            position: relative;
+            border: 3px solid $blue-color-font;
+            cursor: pointer;
+            background: $vialet-lightest-color;
+            & ~ label {
+                left: 60px;
+                width: 65%;
+                top: 29px;
+                @include font(16, 24);
+                font-weight: 400;
+            }
+            &::after {
+                _content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 18px;
+                height: 11px;
+                border: 3px solid $white-color;
+                border-top: 0;
+                border-right: 0;
+                transform: translate(-50%, -50%) rotate(45deg);
+
+            }
+        }
+        .stylishCornerTreeColor {
+            margin-top: 13px;
+        }
+    }
+}
+
+//newsDatails
+.newsDetailsPage {
+    padding: 96px 0;
+    .imageHolder {
+        aspect-ratio: 1280/369;
+    }
+    .contentHolder {
+        width: 66%;
+        margin: 0 auto;
+        padding-top: 115px;
+    }
+}
+// people
+.personeInfo {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    .imgHolder {
+        aspect-ratio: 320/320;
+        @include circle(320);
+        overflow: hidden;
+        margin: 0 auto 50px;
+    }
+    .h3 {
+        margin-bottom: 6px;
+    }
+    .sectionTitle {
+        letter-spacing: 1px;
+        margin-bottom: 25px;
+    }
+    .sotial-links {
+        padding-top: 5px;
+        justify-content: center;
+    }
+}
+.peoplePage {
+    margin-bottom: 96px;
+}
+//private polici
+.textPageWithLeftLine {
+    position: relative;
+    padding: 96px 0 0;
+    &:after {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        bottom: -24px;
+        width: 296px;
+        height: 24px;
+        @include colorlineVar2(left)
+    }
+}
+#privatPolicy {
+    .pixelOrange::before {
+        width: 24px;
+        height: 24px;
+    }
+    .titleSectionHolder.pixelOrange {
+        padding-top: 50px;
+    }
+    .h2 {
+        margin-bottom: 7px;
+    }
+}

@@ -24,7 +24,7 @@ function Career(){
             <div className="container bg-turquoise listGreedBox">
                 <div className="simpleBox">
                     <p className="simpleBox-title">
-                        Full Stack Developer
+                        Front-end Developer
                     </p>
                     <div className="simpleBox-text">
                         <span>Bengaluru · Full Time </span>

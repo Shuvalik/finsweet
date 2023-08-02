@@ -99,6 +99,18 @@
     }
 }
 
+.bottonRightColorLine {
+    position: relative;
+    &:after {
+        content: ' ';
+        position: absolute;
+        right: 0;
+        bottom: -18px;
+        width: 346px;
+        height: 18px;
+        @include colorlineVar2(right)
+    }
+}
 .pixelBlue {
     @include pixel(16, $blue-color);
 }
