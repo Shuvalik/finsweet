@@ -6,6 +6,11 @@ $base-font: 'Poppins', sans-serif;
 
 $main-color: #232536;
 
+$main-space: 96px;
+$main-space-tb: 50px;
+@media only screen and (max-width: 1020px) {
+}
+    
 $white-color: #ffffff;
 $orange-color: #FFA155;
 $orange-light-color: #FFD3AF;
@@ -30,8 +35,4 @@ $grey-lightest-color: #FAFAFC;
 $font-color-opacity-white: rgba(255, 255, 255, 0.87);
 $font-link-color: #5C63FC;
 $font-link-color2: #5D5FEF;
-
-$spaceColorContentBoxes: 30px 30px 0;
-$spaceColorContentBoxes-medium: 20px 20px 0;
-
 

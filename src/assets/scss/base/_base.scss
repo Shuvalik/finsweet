@@ -34,15 +34,23 @@ main {
   flex-grow: 1;
 }
 section {
-  padding: 96px 0;
+  padding: $main-space 0;
+  @media only screen and (max-width: 1020px) {
+    padding: $main-space-tb 0;
+  }
 }
 .twoColumns {
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width: 960px) {
+      flex-direction: column;
+    }
     > div {
       max-width: 50%;
-      
-    flex: 1 0 fit-content;
+      flex: 1 0 fit-content;
+      @media only screen and (max-width: 960px) {
+        max-width: 100%;
+      }
     }
 }
 .threeColumns {
@@ -55,6 +63,9 @@ section {
 }
 p {
   margin-bottom: 24px;
+  @media only screen and (max-width: 960px) {
+      margin-bottom: 15px;
+  }
 }
 strong {
   font-weight: 600;
@@ -66,6 +77,13 @@ strong {
   margin-bottom: 24px;
   padding-top: 51px;
   @include pixel(24, $grey-dark-color);
+    @media only screen and (max-width: 1200px) {
+      @include font(48, 58);
+    }
+    @media only screen and (max-width: 960px) {
+      margin-bottom: 15px;
+      padding-top: 30px;
+    }
 }
 .h2 {
   font-weight: 600;
@@ -77,16 +95,25 @@ strong {
   &.pixelViolete {
     padding-top: 30px;
   }
+    @media only screen and (max-width: 1200px) {
+      @include font(36, 54);
+    }
 }
 .h3 {
   font-weight: 600;
   @include font(36, 54);
   margin-bottom: 24px;
+    @media only screen and (max-width: 1200px) {
+      @include font(24, 36);
+    }
 }
 .h4 {
   font-weight: 600;
   @include font(24, 36);
   margin-bottom: 20px;
+    @media only screen and (max-width: 1200px) {
+      @include font(18, 28);
+    }
 }
 .smodzi {
   font-family: 'emodzi';
@@ -120,7 +147,10 @@ strong {
   aspect-ratio: 1270/406;
   width: 100%;
   padding-top: 40px;
-  margin-bottom: 96px;
+  margin-bottom: $main-space;
+  @media only screen and (max-width: 1020px) {
+    margin-bottom: $main-space-tb;
+  }
 }
 blockquote {
   font-weight: 600;

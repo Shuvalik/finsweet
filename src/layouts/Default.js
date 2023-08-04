@@ -24,6 +24,12 @@ function Default() {
                      })}
                 </ul>
               </nav>
+              <div class="overlight"></div>
+              <button id="hamburger" class="hamburger hamburger--squeeze" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
             </div>
         </header>
             <main>
@@ -31,92 +37,88 @@ function Default() {
             </main>
             
         <footer className="footer">
-          <div className="container topSide stylishCornerTreeColor twoColumns">
-            <div>
+          <div className="container topSide stylishCornerTreeColor">
+            <div className="topTextHolder">
               <h2 className='h2'>Let's make something special</h2>
-              <p className="subTitle">Let's talk! 🤙 </p>
-              <address>
-                <p><a href="tel:020 7993 2905">020 7993 2905</a></p>
-                <p><a href="mailto:hi@finsweet.com">hi@finsweet.com</a></p>
-                <p className='separate'>
-                  DLF Cybercity, Bhubaneswar, 
-                  India, &52050
-                </p>   
-              </address>
+              <div className="adressHolder">
+                <p className="subTitle">Let's talk! <span className="smodzi">🤙</span> </p>
+                <address>
+                  <p><a href="tel:020 7993 2905">020 7993 2905</a></p>
+                  <p><a href="mailto:hi@finsweet.com">hi@finsweet.com</a></p>
+                  <p className='separate'>
+                    DLF Cybercity, Bhubaneswar, 
+                    India, &52050
+                  </p>   
+                </address>
+              </div>
             </div>
-            <div className="navSection">
-              <div className="threeColumns">
-                <nav className="main-nav">
-                  <ul>
-                    <li>
-                      <a href="/">Home</a>
-                    </li>
-                    <li>
-                      <a href="/">Service</a>
-                    </li>
-                    <li>
-                      <a href="/">Company</a>
-                    </li>
-                    <li>
-                      <a href="/">Career</a>
-                    </li>
-                    <li>
-                      <a href="/">News</a>
-                    </li>
-                  </ul>
-                </nav>
-                <nav>
-                  <p className="titleMenu">
-                    Service
-                  </p>
-                  <ul>
-                    <li>
-                      <a href="http://">Technical support</a>
-                    </li>
-                    <li>
-                      <a href="http://">Testing</a>
-                    </li>
-                    <li>
-                      <a href="http://">Development</a>
-                    </li>
-                    <li>
-                      <a href="http://">AWS/Azure </a>
-                    </li>
-                    <li>
-                      <a href="http://">Consulting</a>
-                    </li>
-                    <li>
-                      <a href="http://">Information Technology</a>
-                    </li>
-                  </ul>
-                </nav>
-                <nav>
-                  <p className="titleMenu">
-                    Resourses
-                  </p>
-                  <ul>
-                    <li>
-                      <a href="http://">About Us</a>
-                    </li>
-                    <li>
-                      <a href="http://">Testimonial</a>
-                    </li>
-                    <li>
-                      <a href="http://">Privacy Policy</a>
-                    </li>
-                    <li>
-                      <a href="http://">Terms of use</a>
-                    </li>
-                    <li>
-                      <a href="http://">Blog</a>
-                    </li>
-                  </ul>
-                </nav>
+              <div className="navSection">
+                <div className="threeColumns">
+                  <nav className="main-nav">
+                    <ul>
+                      <li>
+                        <a href="/">Home</a>
+                      </li>
+                      <li>
+                        <a href="/">Service</a>
+                      </li>
+                      <li>
+                        <a href="/">Company</a>
+                      </li>
+                      <li>
+                        <a href="/">Career</a>
+                      </li>
+                      <li>
+                        <a href="/">News</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <nav>
+                    <p className="titleMenu">
+                      Service
+                    </p>
+                    <ul>
+                      <li>
+                        <a href="http://">Technical support</a>
+                      </li>
+                      <li>
+                        <a href="http://">Testing</a>
+                      </li>
+                      <li>
+                        <a href="http://">Development</a>
+                      </li>
+                      <li>
+                        <a href="http://">AWS/Azure </a>
+                      </li>
+                      <li>
+                        <a href="http://">Consulting</a>
+                      </li>
+                      <li>
+                        <a href="http://">Information Technology</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <nav>
+                    <p className="titleMenu">
+                      Resourses
+                    </p>
+                    <ul>
+                      <li>
+                        <a href="http://">About Us</a>
+                      </li>
+                      <li>
+                        <a href="http://">Privacy Policy</a>
+                      </li>
+                      <li>
+                        <a href="http://">Terms of use</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
               </div>
               <div className="colorLineLink">
                 <a href='/' className="arrowLink">Contact Us</a>
               </div>
-            </div>
           </div>
           <div className="bottomSide">
             <div className="container">

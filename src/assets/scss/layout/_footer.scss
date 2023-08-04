@@ -2,9 +2,40 @@
     font-weight: 500;
     .topSide {
         padding: 67px 0 60px;
+        overflow: hidden;
+        position: relative;
+        @media only screen and (max-width: 960px) {
+            padding: 40px 0 25px;
+        }
         .h2 {
-            max-width: 80%;
             margin-bottom: 40px;
+            @media only screen and (max-width: 960px) {
+                margin-bottom: 10px;
+            }
+        }
+        .topTextHolder {
+            max-width: 40%;
+            float: left;
+            @media only screen and (max-width: 960px) {
+                max-width: 100%;
+                float: none;
+                display: flex;
+                .adressHolder {
+                   text-align: right;
+                }
+                address {
+                    padding-left: 20%;
+                    width: 100%;
+                }
+            }
+        }
+        .colorLineLink {
+            position: absolute;
+            bottom: 65px;
+            right: 0;
+            .arrowLink {
+                padding-right: 30px;
+            }
         }
     }
     .subTitle {
@@ -14,7 +45,7 @@
     }
     address {
         font-style: normal;
-        width: 38%;
+        width: 47%;
         p {
             margin-bottom: 5px;
         }
@@ -48,14 +79,17 @@
         }
     }
     .navSection {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-bottom: 5px;
+        margin-left: 50%;
+        @media only screen and (max-width: 960px) {
+            margin: 0;
+        }
         .threeColumns {
             padding-left: 17px;
             padding-top: 15px;
             justify-content: start;
+            @media only screen and (max-width: 960px) {
+                padding: 0;
+            }
             & > nav {
                 width: 35%;
                 &.main-nav {
