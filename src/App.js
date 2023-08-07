@@ -14,10 +14,11 @@ import CareerPosition from './pages/CareerPositionSubPage';
 import NewsDetail from './pages/NewsDetailSubPage';
 import PeopleDetails from './pages/CompanyPeopleSubPage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const hash = useLocation().hash;
-      useEffect(() =>{
+  useEffect(() =>{
     if (hash !== '') {
       const top = document.querySelector(hash).offsetTop || 0;
       window.scrollTo({top, behavior: 'smooth'})
@@ -41,6 +42,7 @@ function App() {
           <Route path='privacy-policy/' element={<PrivacyPolicy />} />
         </Route>
       </Routes>
+      <ScrollToTop />
     </div>
   );
 }

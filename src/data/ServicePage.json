@@ -1,0 +1,25 @@
+{
+    "navTitle": "Service",
+    "partsPage": [
+        {
+            "title": "Technical support",
+            "path" : "service/#support"
+        },
+        {
+            "title": "Development",
+            "path" : "service/#development"
+        },
+        {
+            "title": "User Experience Design",
+            "path" : "service/#design"
+        },
+        {
+            "title": "Digital Marketing & Strategy",
+            "path" : "service/#digital"
+        },
+        {
+            "title": "Web Analytics & User Insights",
+            "path" : "service/#analytics"
+        }
+    ]
+}

@@ -92,7 +92,7 @@
             }
             @media only screen and (max-width: 660px) {
                 flex-wrap: wrap;
-
+                gap: 20px;
             }
             & > nav {
                 width: 35%;
@@ -100,9 +100,9 @@
                     width: 29%;
                 }
                 @media only screen and (max-width: 660px) {
-                    width: 50%;
+                    width: calc(50% - 40px);
                     &.main-nav {
-                        width: 50%;
+                        width: calc(50% - 40px);
                     }
                 }
             }
