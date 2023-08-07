@@ -32,7 +32,8 @@ function NewsDetail() {
                     </div>
                 </div>
 
-                
+            
+            </div>    
             <div className="container stylishCornerTreeColor subScribe">
               <div className="twoColumns rightColorFullLine">
                 <div>
@@ -46,7 +47,6 @@ function NewsDetail() {
                   <input type="email" name="" id="" placeholder='Paresh@Pixeto.com' />
                 </form>
               </div>
-            </div>
             </div>
         </section>
         </>

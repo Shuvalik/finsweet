@@ -159,8 +159,8 @@ function CareerPosition() {
                     <textarea placeholder="Why do you thing you are good fit for Finsweet?" />
                     </div>
                     <div className="checkboxHolder">
-                            <input type="checkbox" id="Iagree" checked={false}/>
-                        <label htmlFor="Iagree">
+                            <input type="checkbox" id="agree" name=""/>
+                        <label htmlFor="agree">
                             I agree to accept the privacy policy,  We will add your contact details provided in this form to our system for contacting you regarding your request.
                         </label>
                     </div>

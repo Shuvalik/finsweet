@@ -45,3 +45,55 @@ input:focus, textarea:focus {
   color: $font-color;
   @include font(16, 24);
 }
+#applyNow form .checkboxHolder {
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        &:focus {
+             + label::before {
+                border-color: $blue-color;
+                box-shadow: 0 0 0 0.2rem rgb(68 76 252 / 25%);
+            }
+        }
+        &:checked  {
+            + label {
+                &::after {
+                     opacity: 1;
+                }
+                &::before {
+                    background-color: $blue-color;
+                }
+            }
+        }
+    }
+    label {
+        position: relative;
+        padding-left: 57px;
+        display: block;
+        left: 0;
+        top: 0;
+        cursor: pointer;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 36px;
+            height: 36px;
+            border: 3px solid $blue-color;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 10px;
+            border-left: 3px solid $white-color;
+            border-bottom: 3px solid $white-color;
+            transform:  rotate(-45deg);
+            left: 11px;
+            top: 10px;
+            opacity: 0;
+        }
+    }
+}

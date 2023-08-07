@@ -9,13 +9,16 @@ body {
     scroll-behavior: smooth;
 } 
 .container {
-    //width: min(90%, $base-width);
     width: 100%;
     max-width: $base-width;
     margin-inline: auto;
     @media only screen and (max-width: 1350px) {
       margin: 0 40px;
       max-width: calc(100% - 80px);
+    }
+    @media only screen and (max-width: 660px) {
+      margin: 0 15px;
+      max-width: calc(100% - 30px);
     }
 }
 header {
@@ -95,9 +98,12 @@ strong {
   &.pixelViolete {
     padding-top: 30px;
   }
-    @media only screen and (max-width: 1200px) {
-      @include font(36, 54);
-    }
+  @media only screen and (max-width: 1200px) {
+    @include font(36, 54);
+  }
+  @media only screen and (max-width: 660px) {
+    @include font(32, 38);
+  }
 }
 .h3 {
   font-weight: 600;
@@ -155,6 +161,9 @@ strong {
 blockquote {
   font-weight: 600;
   @include font(24, 36);
+  @media only screen and (max-width: 660px) {
+    @include font(22, 28);
+  }
 }
 /**/
 .bg-orange {
