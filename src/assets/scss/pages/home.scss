@@ -1,0 +1,145 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+//first section
+.campaign {
+    padding-bottom: 22px;
+    background-color: $main-color;
+    color: $font-color;
+    .twoColumns {
+        align-items: center;
+        p {
+            margin-bottom: 31px;
+            margin-right: 110px;
+            @media only screen and (max-width: 660px) {
+                margin-bottom: 16px;
+                margin-right: 0; 
+            }
+        }
+        .stylishCornerTreeColor:has(.btn) {
+            margin-bottom: 101px;
+            @media only screen and (max-width: 960px) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .imageHolder {
+        aspect-ratio: 563/618;
+        max-width: 578px;
+        border: 0;
+        border-right: 24px;
+        border-style: solid;
+        border-image: linear-gradient($orange-color 12%, $orange-light-color 12%, $orange-light-color 47%, $blue-color 47%, $blue-color 54%, transparent 54%, transparent 100%) 1;
+        padding-left: 16px;
+        @media only screen and (max-width: 1350px) {
+            max-width: 50%;
+        }
+        @media only screen and (max-width: 960px) {
+                max-width: 100%;
+                width: 100%;
+                align-self: center;
+                max-height: 450px;
+                position: relative;
+                border: 0;
+                padding: 0;
+                &::before { 
+                    content:'';
+                    width: 16px;
+                    height: 75px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    @include colorlineVar2(bottom);
+                }
+                &::after { 
+                    content:'';
+                    width: 25px;
+                    height: 225px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    @include colorlineVar2(bottom);
+                }
+        }
+        @media only screen and (max-width: 660px) {
+            &::before, &::after {
+                display: none;
+            }
+        }
+        img {
+            display: block;
+            border: 0;
+            border-left: 16px;
+            border-style: solid;
+            border-image: linear-gradient(transparent 84%, $orange-color 84%, $orange-color 88%, $orange-light-color 88%, $orange-light-color 98%, $blue-color 98%, $blue-color 100%) 1;
+            @media only screen and (max-width: 960px) {
+                border: 0;
+            }
+        }
+    }
+    .clientLists {
+        padding-top: 39px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        font-weight: 500;
+        @media only screen and (max-width: 1020px) {
+            gap: 20px;
+        }
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+            gap: 0;
+            align-items: flex-start;
+        }
+        @media only screen and (max-width: 480px) {
+            align-items: center;
+            text-align: center;
+        }
+        span {
+            @include font(14, 20);
+            margin-bottom: 15px;
+        }
+        p {
+            @include font(18, 28);
+            color: $white-color;
+        }
+        .logosList {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            @media only screen and (max-width: 1020px) {
+                gap: 20px;
+            }
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
+            @media only screen and (max-width: 480px) {
+                flex-wrap: wrap;
+                justify-content: center;
+                & > li {
+                    width: calc(50% - 10px);
+                }
+            }
+            svg {
+                width: 100px;
+                height: auto;
+                display: block;
+                @media only screen and (max-width: 960px) {
+                   width: 76px;
+                }
+                @media only screen and (max-width: 480px) {
+                    margin: 0 auto;
+                }
+            }
+            a:hover svg path {
+                fill: $white-color; 
+                &.whiteColor {
+                    fill: $grey-dark-color;
+                }
+            }
+        }
+    }
+}
+//section about us

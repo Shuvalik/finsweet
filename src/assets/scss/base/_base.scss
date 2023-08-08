@@ -7,6 +7,7 @@ body {
     color: $main-color;
     @include font(16, 24);
     scroll-behavior: smooth;
+    position: relative;
 } 
 .container {
     width: 100%;

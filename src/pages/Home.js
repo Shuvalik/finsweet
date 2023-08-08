@@ -1,4 +1,5 @@
-
+import '../assets/scss/pages/home.scss';
+import content from '../data/HomePage.json';
 
 import campaignImg from './../assets/images/content-campaign-img.jpg';
 import aboutSectionImg1 from './../assets/images/content-about-section1.jpg';
@@ -12,6 +13,8 @@ import newsImg1 from './../assets/images/last-news-img1.jpg';
 import newsImg2 from './../assets/images/last-news-img2.jpg';
 
 import svgSprite from './../assets/images/icons-sprite.svg';
+import FormContactUs from '../components/FormContactUs';
+import { useState } from 'react';
 //import './App.css';
 
 
@@ -22,22 +25,20 @@ const settings = svgSprite + '#settings';
 const development = svgSprite + '#development';
 const design = svgSprite + '#design';
 const support = svgSprite + '#support';
-
+    const [showModalBox, setShowModalBox] = useState(false);
+    function clickHandler() {
+      setShowModalBox(true);
+    }
     return (
         <>
-        
           <section className="campaign">
             <div className="container">
               <div className="twoColumns">
                 <div>
-                  <h1 className="h1">
-                    Transform Your Idea Into Reality with Finsweet
-                  </h1>
-                  <p>
-                    The entire Finsweet team knows what's good with Webflow and you can too with 1 week and a good attitude.
-                  </p>
+                  <h1 className="h1">{content.pageTitle}</h1>
+                  <p>{content.firstSectionText}</p>
                   <div className="stylishCornerTreeColor">
-                    <button className="btn arrowLink">Request Quote</button>
+                    <button className="btn arrowLink" onClick={clickHandler}><span className="hoverEfectBtn"></span><span className="text">{content.textButton}</span></button>
                   </div>
                 </div>
                 <div className="imageHolder">
@@ -46,8 +47,8 @@ const support = svgSprite + '#support';
               </div>
               <div className="clientLists">
                 <div>
-                  <span>Our Clients</span>
-                  <p>We've Worked with</p>
+                  <span>{content.labelOurClients}</span>
+                  <p>{content.textClientBox}</p>
                 </div>
                 <ul className='logosList'>
                   <li>
@@ -561,8 +562,9 @@ const support = svgSprite + '#support';
               </div>
             </div>
           </section>
-
-
+          <div className={(showModalBox) ? 'overLightModal open': 'overLightModal'}>
+            <FormContactUs  modal={true} close={()=>setShowModalBox(false)} /> 
+          </div>  
         </>
     )
 }

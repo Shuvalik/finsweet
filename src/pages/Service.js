@@ -7,13 +7,12 @@ import img5 from './../assets/images/cont-img-service5.jpg';
 function Service() {
     return (
         <>
-        
           <section className="servicesPageCampaign bg-orange">
             <div className="container twoColumns">
                 <div>
                   <p className="sectionTitle">Our Services</p>
                   <h1 className="h2">
-                    We Build Software Solutionthat Solve Clients Business Challenges
+                    We Build Software Solution that Solve Clients Business Challenges
                   </h1>
                   <p>
                     We can deliver good alternatives to rigid IT solutions because we firmly believe each client deserves an individual approach. 
@@ -25,7 +24,7 @@ function Service() {
                 <nav className="navOnPage">
                     <ul>
                         <li>
-                            <a href="#support" className="arrowLink">Technical support</a>
+                            <a href="#support" className="arrowLink">Technical Support</a>
                         </li>
                         <li>
                             <a href="#development" className="arrowLink">Development</a>
@@ -49,7 +48,7 @@ function Service() {
               <div className="titleSectionHolder">
                   <p className="sectionTitle">Our Process</p>
                   <h2 className="h2">
-                    The process we are working With Our client Worldwide
+                    The process we are working with our client worldwide
                   </h2>
                   <p>
                     We optimize the site’s structure, speed, and responsiveness, ensuring a seamless user experience. Trustworthy web development services are crucial for establishing a strong online presence.

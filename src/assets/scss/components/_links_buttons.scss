@@ -29,7 +29,19 @@
         border-left-color: transparent;
     }
 }
+.hoverEfectBtn {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(to right, $orange-color, $orange-light-color);
+  transform: translateX(-120%) skew( -45deg, 0);
+  transition: all .6s ease;
+}
 .btn {
+  position: relative;
   border: 0;
   font-weight: 500;
   font-family: $base-font;
@@ -40,19 +52,60 @@
   height: 64px;
   padding: 0 68px 0 32px;
   background-color: $blue-color;
+  cursor: pointer;
+  transition: all 0.8s ease;
+  overflow: hidden;
+  .text {
+    position: relative;
+    z-index: 3;
+  }
+  &:hover {
+    .hoverEfectBtn {
+      transform: translateX(-10%) skew( -45deg, 0);
+    }
+    .text {
+      color: $font-color2;
+    }
+    &.arrowLink {
+      &::after {
+        background-color: $font-color2;
+      }
+      &::before {
+        border-top-color: $font-color2;
+        border-right-color: $font-color2;
+      }
+    }
+  }
   &.arrowLink {
     &::after {
         background-color: $font-color-opacity-white;
         right: 32px;
+        z-index: 3;
     }
     &::before {
         border-top-color: $font-color-opacity-white;
         border-right-color: $font-color-opacity-white;
         right: 32px;
+        z-index: 3;
     }
   }
 }
-
+.closeBtn {
+  border: 0;
+  width: 40px;
+  height: 40px;
+  color: $white-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $main-color;
+  cursor: pointer;
+  transition: all 0.8s ease;
+  &:hover {
+    background-color: $orange-color;
+    color: $font-color2;
+  }
+}
 .colorLineLink {
     position: relative;
     padding-left: 55px;
@@ -88,9 +141,6 @@
   display: flex;
   justify-content: space-between;
   gap: 26px;
-    // @media only screen and (max-width: 1024px) {
-    //   gap: 10px;
-    // }
   a {
     display: inline-block;
     svg {

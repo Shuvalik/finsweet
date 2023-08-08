@@ -73,3 +73,35 @@
         @include font(14, 20);
     }
 }
+//modal box
+.overLightModal {
+    position: fixed;
+    width: 100vw;
+    min-height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1099;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    &.open {
+        display: flex;
+    }
+    .modalBox {
+        width: 50%;
+        padding: 5%;
+        z-index: 1100;
+        background-color: $white-color;
+        position: relative;
+        .closeBtn {
+            position: absolute;
+            right: 5%;
+            top: 6%;
+        }
+        textarea {
+            height: 40px;
+        }
+    }
+}

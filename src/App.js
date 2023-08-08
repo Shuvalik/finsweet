@@ -15,6 +15,8 @@ import NewsDetail from './pages/NewsDetailSubPage';
 import PeopleDetails from './pages/CompanyPeopleSubPage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import ScrollToTop from './components/ScrollToTop';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 function App() {
   const hash = useLocation().hash;
@@ -42,6 +44,7 @@ function App() {
           <Route path='privacy-policy/' element={<PrivacyPolicy />} />
         </Route>
       </Routes>
+      <ToastContainer />
       <ScrollToTop />
     </div>
   );

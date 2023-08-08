@@ -23,15 +23,26 @@
         z-index: 1;
     }
     &:has(.btn) {
+        overflow: hidden;
         &::after {
             height: 18px;
             width: 28px;
             border-top-width: 10px;
+            transition: all 0.8s ease;
         }
         &::before {
             top: 18px;
+            transition: all 0.8s ease;
         }
-
+    }
+    &:has(.btn:hover) {
+        overflow: hidden;
+        &::after {
+            display: none;
+        }
+        &::before {
+            display: none;
+        }
     }
     &.rightCorner {
         &.bigger {
