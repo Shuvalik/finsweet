@@ -1,0 +1,24 @@
+{
+    "namePage": "",
+    "titlePage" : "",
+    "textPage" : "",
+    "images" : [
+        {
+            "src": "./../assets/images/content-about-section1.jpg"
+        },
+        {
+            "src": "./../assets/images/content-about-section2.jpg"
+        },
+        {
+            "src": "./../assets/images/content-about-section3.jpg"
+        }
+    ],
+    "sectionAboutUs": {
+        "label": "ABOUT US",
+        "title": "The company leads entire webdesign process from concept to delivery.",
+        "subTitle": "The Era Of Technology.",
+        "text": "We envision our company as the go-to partner for businesses and organizations seeking to explore and express their “why” through their digital presence.",
+        "linkText": "Read about us",
+        "linkPath": "company/"
+    }
+}

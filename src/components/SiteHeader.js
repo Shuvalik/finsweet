@@ -1,4 +1,4 @@
-import {NavLink} from "react-router-dom"
+import {NavLink} from "react-router-dom";
 import { MainNav } from "../data/navigation";
 import logo from './../assets/images/logo.svg';
 import Hamburger from 'hamburger-react';

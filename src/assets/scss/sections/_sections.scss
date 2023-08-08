@@ -18,59 +18,7 @@
     }
 }
 
-.aboutUs {
-    padding-top: 120px;
-    @media only screen and (max-width: 1020px) {
-        padding-top: $main-space-tb;
-    }
-    .twoColumns {
-        .textSide {
-            padding: 44px 0 47px 90px;
-            @media only screen and (max-width: 960px) {
-                padding: 0 0 20px;
-            }
-            @media only screen and (max-width: 660px) {
-                padding: 0;
-            }
-        }
-    }
-    .twoColumns > .counterList {
-        @media only screen and (max-width: 1020px) {
-            max-width: 100%;
-            justify-content: flex-start;
-            gap: 20px;
-        }
-        @media only screen and (max-width: 660px) {
-            flex-wrap: wrap;
-            & > div {
-                width: calc(50% - 10px);
-            }
-        }
-    }
-    h3 {
-        margin-bottom: 16px;
-    }
-    .threeImgBoxes {
-        margin-bottom: 48px;
-        @media only screen and (max-width: 960px) {
-            margin-bottom: 20px;
-            .imageHolder {
-                max-width: calc((100% - 30px) / 3);
-            }
-        }
-    }
-    .arrowLink {
-        align-self: center;
-        margin-top: 13px;
-        @media only screen and (max-width: 960px) {
-            align-self: flex-end;
-        }
-        &::after {
-            width: 24px;
 
-        }
-    }
-}
 
 .approach {
     align-items: center;
