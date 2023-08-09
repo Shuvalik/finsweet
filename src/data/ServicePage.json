@@ -1,25 +1,39 @@
 {
     "navTitle": "Service",
+    "label": "Our Services",
+    "pageTitle": "We build software solutions that solve client's business challenges",
     "partsPage": [
         {
             "title": "Technical Support",
-            "path" : "service/#support"
+            "path" : "service/#support",
+            "spotText": "We take time to review site traffic with an emphasis on visitor trends, traffic sources, content review, goals, search, and campaign tracking.",
+            "spotIconId": "#garniture"
         },
         {
             "title": "Development",
-            "path" : "service/#development"
+            "path" : "service/#development",
+            "spotText": "Web development encompasses creating and maintaining websites involving various technologies and programming languages.",
+            "spotIconId": "#development"
         },
         {
             "title": "User Experience Design",
-            "path" : "service/#design"
+            "path" : "service/#design",
+            "spotText": "A well-designed interface is the key to a successful website or application, as it enhances user experience and promotes user interaction. ",
+            "spotIconId": "#design"
         },
         {
             "title": "Digital Marketing & Strategy",
-            "path" : "service/#digital"
+            "path" : "service/#digital",
+            "spotText": "A robust digital strategy, complemented by solid market intelligence, is integral to successful web development in the digital era.",
+            "spotIconId": "#settings"
         },
         {
             "title": "Web Analytics & User Insights",
-            "path" : "service/#analytics"
+            "path" : "service/#analytics",
+            "spotText": "Based on market intelligence & competitor insights, our team will help you identify high-impact ideas.",
+            "spotIconId": "#support"
         }
-    ]
+    ],
+    "labelButtonFor": "Start a Project",
+    "textLinkSpot": "Read more"
 }

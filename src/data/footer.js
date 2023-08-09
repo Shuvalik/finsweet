@@ -3,3 +3,8 @@ export const footerContent = {
     titleAdressBox: `Let's talk! <span class="smodzi">🤙</span>`,
     copyRightText: "©2021 Finsweet"
 }
+
+export const subScribe = {
+    label: "NEWSLETTER",
+    title: "Subscribe our News Letter to get Latest Updates."
+}

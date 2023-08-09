@@ -1,17 +1,17 @@
 import { useState } from "react";
 import { useInView } from 'react-intersection-observer';
 
-function CounterList() {
+function CounterList({content}) {
     const [countStateProject, setCountStateProject] = useState(0);
     const [countStateProfessional, setCountStateProfessional] = useState(0);    
     const [countStateClient, setCountStateClient] = useState(0);    
     const [countStateExperience, setCountStateExperience] = useState(0);
     function CountersInit() {
         const dataCounter = [
-            {number: 1560, setState: setCountStateProject},
-            {number: 100, setState: setCountStateProfessional},
-            {number: 950, setState: setCountStateClient},
-            {number: 10, setState: setCountStateExperience}
+            {number: +content[0].number, setState: setCountStateProject},
+            {number: +content[1].number, setState: setCountStateProfessional},
+            {number: +content[2].number, setState: setCountStateClient},
+            {number: +content[3].number, setState: setCountStateExperience}
         ];
         dataCounter.forEach(({number, setState}) => {
             let startTimestep = null;
@@ -40,23 +40,23 @@ function CounterList() {
   });
     return (
         <div className="counterList" ref={ref}>
-                  <div>
-                    <span className="number">{countStateProject}+</span>
-                    Project Delivered
-                  </div>
-                  <div>
-                    <span className="number">{countStateProfessional}+</span>
-                    Professional
-                  </div>
-                  <div>
-                    <span className="number">{countStateClient}+</span>
-                    Happy Client
-                  </div>
-                  <div>
-                    <span className="number">{countStateExperience} yrs</span>
-                    Experience
-                  </div>
-                </div>
+           <div>
+            <span className="number">{countStateProject}+</span>
+            {content[0].label}
+          </div>
+          <div>
+            <span className="number">{countStateProfessional}+</span>
+            {content[1].label}
+          </div>
+          <div>
+            <span className="number">{countStateClient}+</span>
+            {content[2].label}
+          </div>
+          <div>
+            <span className="number">{countStateExperience} yrs</span>
+            {content[3].label}
+          </div>
+        </div>
     )
 }
 export default CounterList;

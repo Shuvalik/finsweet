@@ -1,0 +1,31 @@
+{
+    "label": "Our Process",
+    "title": "The process we are working with our client Worldwide",
+    "text": "We optimize the site’s structure, speed, and responsiveness, ensuring a seamless user experience. Trustworthy web development services are crucial for establishing a strong online presence.",
+    "listProcess": [
+        {
+            "name": "Discover",
+            "shortText": "Effective web development is requires a well-crafted digital strategy."
+        },
+        {
+            "name": "Designing",
+            "shortText": "Our design process begins with deeply understanding your project goals."
+        },
+        {
+            "name": "Development",
+            "shortText": "Skilled developers use HTML, CSS, and JavaScript to build visually appealing and functional sites."
+        },
+        {
+            "name": "Testing",
+            "shortText": "The website QA testing is an advanced process of checking the site for bugs."
+        },
+        {
+            "name": "Deployment",
+            "shortText": "Deployment web development means pushing updates from one environment to another."
+        },
+        {
+            "name": "Maintenance",
+            "shortText": "Process of keeping a website and running smoothly as well as performing optimally."
+        }
+    ]
+}

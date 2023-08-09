@@ -3,6 +3,31 @@
     position: relative;
     font-weight: 500;
     color: $font-link-color;
+    transition: all 0.6s ease;
+    .hoverEfectLinks {
+      position: relative;
+      &::after {
+          content: '';
+          width: 0;
+          height: 1px;
+          background-color: $font-link-color;
+          box-shadow: 0 0 4px $font-link-color;
+          position: absolute;
+          bottom: -2px;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: all .3s ease;
+      }
+    }
+    &:not(.btn):hover {
+      transform: scale(1.1);
+      text-shadow: $font-link-color 1px 0 10px;
+      .hoverEfectLinks {
+        &::after {
+            width: 100%;
+        }
+      }
+    }
     &.read-more {
       padding-right: 36px;
     }
@@ -28,6 +53,25 @@
         border-bottom-color: transparent;
         border-left-color: transparent;
     }
+}
+.hoverEfectLinks {
+  position: relative;
+  &::after {
+      content: '';
+      width: 0;
+      height: 1px;
+      background-color: $main-color;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all .3s ease;
+  }
+  &:has(.arrowLink:hover) {
+      &::after {
+          width: 100%; 
+      }
+  }
 }
 .hoverEfectBtn {
   position: absolute;

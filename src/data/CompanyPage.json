@@ -2,15 +2,15 @@
     "namePage": "",
     "titlePage" : "",
     "textPage" : "",
-    "images" : [
+    "images": [
         {
-            "src": "./../assets/images/content-about-section1.jpg"
+            "imgPath": "/images/content-about-section1.jpg"
         },
         {
-            "src": "./../assets/images/content-about-section2.jpg"
+            "imgPath": "/images/content-about-section2.jpg"
         },
         {
-            "src": "./../assets/images/content-about-section3.jpg"
+            "imgPath": "/images/content-about-section3.jpg"
         }
     ],
     "sectionAboutUs": {
@@ -20,5 +20,45 @@
         "text": "We envision our company as the go-to partner for businesses and organizations seeking to explore and express their “why” through their digital presence.",
         "linkText": "Read about us",
         "linkPath": "company/"
+    },
+    "counterList": [
+        {
+            "label": "Project Delivered",
+            "number": "1560"
+        },
+        {
+            "label": "Professional",
+            "number": "100"
+        },
+        {
+            "label": "Happy Client",
+            "number": "950"
+        },
+        {
+            "label": "Experience",
+            "number": "10"
+        }
+    ],
+    "sectionApproach": {
+        "label": "Our Approach",
+        "title": "Our commitment to composable digital experiences gives brands the creativity and control.",
+        "text": "With a laser focus on flexible, composable technology stacks, we empower customer-first retailers, manufacturers and brands to deliver remarkable products and services at scale. ",
+        "teasers": [
+            {
+                "title": "Our mission",
+                "text" : "To deliver solutions that give measurable results through speed-to-market.",
+                "iconId": "#design"
+            },
+            {
+                "title": "Our Culture",
+                "text" : "We strongly believe if we create a place where we love to work, then we can revel in being work.",
+                "iconId": "#settings"
+            },
+            {
+                "title": "Our vision",
+                "text" : "To be a major force in digital engineering in the UK, Europe and the Middle East.",
+                "iconId": "#support"
+            }
+        ]
     }
 }

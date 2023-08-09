@@ -16,17 +16,15 @@ function SectionAboutUs(){
                 </div>
               </div>
               <div className="threeImgBoxes rightColorFullLine">
-                {content.images.map((item, index) => {
-                    return (
-                        <div className="imageHolder"  key={index}>
-                            <img src={item.src} alt="img" />
-                        </div>
-                    )
-                })}
+                  {content.images.map((item, index) => {
+                    return (<div className="imageHolder" key={index}>
+                              <img src={item.imgPath} alt="img" />
+                            </div>)
+                  })}
               </div>
               <div className="twoColumns">
-                <CounterList />
-                <NavLink to={content.sectionAboutUs.linkPath} className="arrowLink">{content.sectionAboutUs.linkText}</NavLink>
+                <CounterList content={content.counterList}/>
+                <NavLink to={content.sectionAboutUs.linkPath} className="arrowLink"><span className="hoverEfectLinks">{content.sectionAboutUs.linkText}</span></NavLink>
               </div>
             </div>
           </section>
