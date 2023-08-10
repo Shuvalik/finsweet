@@ -22,6 +22,7 @@
     &:not(.btn):hover {
       transform: scale(1.1);
       text-shadow: $font-link-color 1px 0 10px;
+      display: inline-block;
       .hoverEfectLinks {
         &::after {
             width: 100%;
@@ -78,11 +79,11 @@
   z-index: 2;
   left: 0;
   top: 0;
-  width: 150%;
+  width: 250%;
   height: 100%;
   background: linear-gradient(to right, $orange-color, $orange-light-color);
   transform: translateX(-120%) skew( -45deg, 0);
-  transition: all .6s ease;
+  transition: all .8s ease;
 }
 .btn {
   position: relative;
@@ -105,7 +106,7 @@
   }
   &:hover {
     .hoverEfectBtn {
-      transform: translateX(-10%) skew( -45deg, 0);
+      transform: translateX(-16%) skew( -45deg, 0);
     }
     .text {
       color: $font-color2;

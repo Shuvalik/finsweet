@@ -54,7 +54,7 @@ function SectionServices({buttonClick}){
               <div className="titleSectionHolder">
                   <p className="sectionTitle">{content.label}</p>
                   <h2 className="h2">{content.pageTitle}</h2>
-                  <div className="stylishCornerTreeColor">
+                  <div className="stylishCornerTreeColor btnHolder">
                     <button className="btn arrowLink" onClick={clickHandler}><span className="hoverEfectBtn"></span><span className="text">{content.labelButtonFor}</span></button>
                   </div>
               </div>
@@ -63,7 +63,7 @@ function SectionServices({buttonClick}){
                     {content.partsPage.map((item, index) => {
                         return (<div className="item" key={index}>
                                     <svg>
-                                        <use xlinkHref={svgSprite + item.spotIconId} />
+                                        <use xlinkHref={svgSprite + item.spotId} />
                                     </svg>
                                     <p className="titleItem">{item.title}</p>
                                     <p>{item.spotText}</p>

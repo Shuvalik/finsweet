@@ -61,7 +61,7 @@ function SiteFooter(){
                 </div>
               </div>
               <div className="colorLineLink">
-                <NavLink className="arrowLink" to={contactLink.pathLink}>{contactLink.textLink}</NavLink>
+                <NavLink className="arrowLink" to={contactLink.pathLink}><span className="hoverEfectLinks">{contactLink.textLink}</span></NavLink>
               </div>
           </div>
           <div className="bottomSide">

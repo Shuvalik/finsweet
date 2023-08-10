@@ -27,7 +27,7 @@ function FormContactUs({modal, close}){
         return regex.test(email);
     }
     function validate(values) {
-        const errors = {};
+        let errors = {};
         if (values.name === '') {
             errors.name = 'Enter your name'
         }
@@ -117,7 +117,7 @@ function FormContactUs({modal, close}){
                 <InputField multy={false} label={contactInfoFormBox.labelEmail} name="email" value={values.email} change={changeHandler} blur={blurHandler} error={errors.email || ''} />
                 <InputField multy={false} label={contactInfoFormBox.labelSubject} name="subject" value={values.subject} change={changeHandler} blur={blurHandler} error={errors.subject || ''} />
                 <InputField multy={true} label={contactInfoFormBox.labelMessege} name="messege" value={values.messege} change={changeHandler} blur={blurHandler} error={errors.messege || ''} />
-                <div className="stylishCornerTreeColor">
+                <div className="stylishCornerTreeColor btnHolder">
                     <button type="submit" className="btn arrowLink" disabled={disabled}><span className="hoverEfectBtn"></span><span className="text">{contactInfoFormBox.labelButton}</span></button>
                 </div>
 

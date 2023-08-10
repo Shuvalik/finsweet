@@ -28,7 +28,7 @@ function Home() {
                 <div>
                   <h1 className="h1">{content.pageTitle}</h1>
                   <p>{content.firstSectionText}</p>
-                  <div className="stylishCornerTreeColor">
+                  <div className="stylishCornerTreeColor btnHolder">
                     <button className="btn arrowLink" onClick={clickHandler}><span className="hoverEfectBtn"></span><span className="text">{content.textButton}</span></button>
                   </div>
                 </div>

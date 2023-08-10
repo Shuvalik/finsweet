@@ -22,7 +22,7 @@
         background-color: $vialet-color;
         z-index: 1;
     }
-    &:has(.btn) {
+    &.btnHolder {
         overflow: hidden;
         &::after {
             height: 18px;
@@ -35,7 +35,7 @@
             transition: all 0.8s ease;
         }
     }
-    &:has(.btn:hover) {
+    &.btnHolder:has(.btn:hover) {
         overflow: hidden;
         &::after {
             display: none;

@@ -1,7 +1,7 @@
 import { subScribe } from "../data/footer";
 import { useState } from "react";
 import { toast } from "react-toastify";
-//import errorsMassege from "../helpers/errorsMassege";
+import errorsMassege from "../helpers/errorsMassege";
 import { urlString, chatId } from "../evn";
 import InputField from "./inputFild.js";
 function SubScribe() {
@@ -14,14 +14,14 @@ function SubScribe() {
         return regex.test(email);
     }
     function validate(values) {
-        const errs = '';
+        let errs = '';
         if (values === '') {
             errs = 'Enter your email'
         }
-        // else if (!isValidEmail(values)) {
-        //     errs = 'Enter your valid email'
-        // }
-        // return errs;
+        else if (!isValidEmail(values)) {
+            errs = 'Enter your valid email'
+        }
+        return errs;
         
         console.log(values);
     }
@@ -40,11 +40,11 @@ function SubScribe() {
         event.preventDefault();
         setDisabled(true);
         const errorMasseges = validate(values);
-        // setErrors(errorMasseges);
-        // if (errorMasseges !== '') {
-        //     setDisabled(false);
-        //     return false
-        // }
+        setErrors(errorMasseges);
+        if (errorMasseges !== '') {
+            setDisabled(false);
+            return false
+        }
         await fetch(urlString, {
             method: 'post',
             headers: {
@@ -59,14 +59,14 @@ function SubScribe() {
         })
         .then(response => {
              if (response.ok) {
-                toast.success('Thanks! We will contact you!', {position: "top-center", theme: "dark"});
+                toast.success('Thanks!', {position: "top-center", theme: "dark"});
                 setValues('')
              }
-             //const textError = errorsMassege(response.status);
-            //  throw new Error(textError);
+             const textError = errorsMassege(response.status);
+             throw new Error(textError);
         })
-        .catch((err) => {
-            toast.error(err, {position: "top-center", theme: "dark"})
+        .catch((error) => {
+            toast.error(error.message, {position: "top-center", theme: "dark"})
         })
         .finally(setDisabled(false));
     }
@@ -78,9 +78,9 @@ function SubScribe() {
                   <h3 className="h3">{subScribe.title}</h3>
                 </div>
                 <form onSubmit={submitHandler} id="subScribe">
-                    <InputField multy={false} placeholder='Paresh@Pixeto.com' name="email" value={values} change={changeHandler} blur={blurHandler} error={errors || ''} />
-                    <div className="stylishCornerTreeColor">
-                        <button type="submit" className="btn arrowLink" disabled={disabled}><span className="hoverEfectBtn"></span><span className="text">{'send'}</span></button>
+                    <InputField multy={false} label="Paresh@Pixeto.com" name="email" value={values} change={changeHandler} blur={blurHandler} error={errors || ''} />
+                    <div className="pixelOrange btnHolder">
+                        <button type="submit" className="btn" disabled={disabled}><span className="hoverEfectBtn"></span><span className="text">{'send'}</span></button>
                     </div>
                 </form>
               </div>

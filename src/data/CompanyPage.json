@@ -1,7 +1,7 @@
 {
-    "namePage": "",
-    "titlePage" : "",
-    "textPage" : "",
+    "namePage": "Company",
+    "titlePage" : "Award-winning Company seen and used by millions around the world.",
+    "textPage" : "We have over 15 years of expertise delivering bespoke consulting, design, architecture and build services using world-leading technology and thinking.",
     "images": [
         {
             "imgPath": "/images/content-about-section1.jpg"
@@ -24,19 +24,23 @@
     "counterList": [
         {
             "label": "Project Delivered",
-            "number": "1560"
+            "number": "1560",
+            "suffix": "+"
         },
         {
             "label": "Professional",
-            "number": "100"
+            "number": "100",
+            "suffix": "+"
         },
         {
             "label": "Happy Client",
-            "number": "950"
+            "number": "950",
+            "suffix": "+"
         },
         {
             "label": "Experience",
-            "number": "10"
+            "number": "10",
+            "suffix": "yrs"
         }
     ],
     "sectionApproach": {
@@ -60,5 +64,10 @@
                 "iconId": "#support"
             }
         ]
+    },
+    "sectionStory": {
+        "label": "Our Story <span class='smodzi'>👇</span>",
+        "title": "From Startups to Titans of Industry",
+        "text": "With a laser focus on flexible, composable technology stacks, we empower customer-first retailers, manufacturers and brands to deliver remarkable products and services at scale. Finsweet work as your partner and team member to create solutions that give your brand complete control of your online presence, be first to market and generate measurable results."
     }
 }

@@ -1,10 +1,10 @@
-
-import aboutSectionImg1 from './../assets/images/content-about-section1.jpg';
-import aboutSectionImg2 from './../assets/images/content-about-section2.jpg';
-import aboutSectionImg3 from './../assets/images/content-about-section3.jpg';
+import '../assets/scss/pages/company.scss';
+import content from '../data/CompanyPage.json';
 import teamImg from './../assets/images/team/img-1.jpg';
 import visionImg from './../assets/images/company-cont-img.jpg';
 import svgSprite from './../assets/images/icons-sprite.svg';
+import StoryCompany from '../components/sectionStoryCompany';
+import ClientList from '../components/clientList';
 function Company() {
 
     const settings = svgSprite + '#settings';
@@ -16,58 +16,21 @@ function Company() {
         <section>
             <div className="container stylishCornerTreeColor rightCorner bigger">
               <div className="titleSectionHolder pixelOrange">
-                  <p className="sectionTitle">Company</p>
-                  <h1 className="h2">
-                    Award-winning Company seen and used by millions around the world.
-                  </h1>
-                  <p>
-                    We have over 15 years of expertise delivering bespoke consulting, design, architecture and build services using world-leading technology and thinking.
-                  </p>
+                  <p className="sectionTitle">{content.namePage}</p>
+                  <h1 className="h2">{content.titlePage}</h1>
+                  <p>{content.textPage}</p>
               </div>
               <div className="threeImgBoxes topRightColorLine">
-                <div className="imageHolder">
-                  <img src={aboutSectionImg1} alt="img" />
-                </div>
-                <div className="imageHolder">
-                  <img src={aboutSectionImg2} alt="img" />
-                </div>
-                <div className="imageHolder">
-                  <img src={aboutSectionImg3} alt="img" />
-                </div>
+                {content.images.map((item, index) => {
+                    return (<div className="imageHolder" key={index}>
+                              <img src={item.imgPath} alt="our team" />
+                            </div>)
+                })}
               </div>
-              
-                <div className="twoColumns subColorSection">
-                    <div className="pixelViolete">
-                        <p><strong>Our Story <span className="smodzi">👇</span></strong></p>
-                        <h3 className="h3">From Startups to Titans of Industry
-                        </h3>
-                        <p>
-                            With a laser focus on flexible, composable technology stacks, we empower customer-first retailers, manufacturers and brands to deliver remarkable products and services at scale. Finsweet work as your partner and team member to create solutions that give your brand complete control of your online presence, be first to market and generate measurable results.
-                        </p>
-                    </div>
-                    <div className="bg-orange">
-                        <div className="counterList">
-                        <div>
-                            <span className="number">1560+</span>
-                            Project Delivered
-                        </div>
-                        <div>
-                            <span className="number">100+</span>
-                            Professional
-                        </div>
-                        <div>
-                            <span className="number">950+</span>
-                            Happy Client
-                        </div>
-                        <div>
-                            <span className="number">10 yrs</span>
-                            Experience
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="sectionwithLogoList"></div>
+              <StoryCompany content={content.sectionStory} counter={content.counterList} />
+              <div className="sectionwithLogoList bg-grey">
+                  <ClientList />
+              </div>
             </div>
           </section>
 

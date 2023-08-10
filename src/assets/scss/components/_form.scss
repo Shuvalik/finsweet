@@ -19,7 +19,7 @@ textarea {
     color: $main-color;
     border: 0;
     border-bottom: 1px solid $font-color-lightest;
-    margin-bottom: 24px;
+    margin-bottom: 34px;
     font-family: "Poppins", sans-serif;
     @include font(16, 24);
     padding: 10px 0 5px;
@@ -62,19 +62,12 @@ input:focus, textarea:focus {
 }
 .input-error {
     @include font(12, 16);
-    font-weight: 500;
-    color: red;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    color: $orange-color;
     position: absolute;
     left: 0;
-    bottom: -18px;
-}
-#subScribe input {
-  width: 100%;
-  padding: 20px 30px;
-  font-family: $base-font;
-  font-weight: 500;
-  color: $font-color;
-  @include font(16, 24);
+    bottom: -6px;
 }
 #applyNow form .checkboxHolder {
     input {

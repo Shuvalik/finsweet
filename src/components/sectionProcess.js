@@ -1,7 +1,7 @@
 import content from '../data/processSection.json';
-function SectionProcess() {
+function SectionProcess({className}) {
     return (
-        <section>
+        <section className={className}>
             <div className="container stylishCornerTreeColor rightCorner smaller">
                 <div className="titleSectionHolder">
                     <p className="sectionTitle">{content.label}</p>

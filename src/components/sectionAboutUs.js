@@ -1,6 +1,6 @@
 import content from '../data/CompanyPage.json';
 import { NavLink } from 'react-router-dom';
-import CounterList from './counterList';
+import CountUp from './CountUp';
 function SectionAboutUs(){
     return (
         <section className="aboutUs">
@@ -18,12 +18,14 @@ function SectionAboutUs(){
               <div className="threeImgBoxes rightColorFullLine">
                   {content.images.map((item, index) => {
                     return (<div className="imageHolder" key={index}>
-                              <img src={item.imgPath} alt="img" />
+                              <img src={item.imgPath} alt="our team" />
                             </div>)
                   })}
               </div>
               <div className="twoColumns">
-                <CounterList content={content.counterList}/>
+                <div className="counterList">
+                  {content.counterList.map((item, index) => <CountUp key={index} label={item.label} value={+item.number} suffix={item.suffix} />)}
+                </div>
                 <NavLink to={content.sectionAboutUs.linkPath} className="arrowLink"><span className="hoverEfectLinks">{content.sectionAboutUs.linkText}</span></NavLink>
               </div>
             </div>
