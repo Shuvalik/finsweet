@@ -1,4 +1,5 @@
 import content from '../data/ourTeam.json';
+import { Link } from "react-router-dom";
 function OurTeam() {
     return (
         <div className="container">
@@ -13,10 +14,10 @@ function OurTeam() {
                             <div className="imgHolder">
                                 <img src={item.image} alt={item.name} />
                             </div>
-                            <div className="textHolder">
-                                <p className="name">{item.name}</p>
-                                <p className="position">{item.position}</p>
-                            </div>
+                            <Link to={`/company/${(item.name).replace(/ /g,'_')}`} className="textHolder">
+                                <span className="name">{item.name}</span>
+                                <span className="position">{item.position}</span>
+                            </Link>
                         </div>)
             })}
             </div>

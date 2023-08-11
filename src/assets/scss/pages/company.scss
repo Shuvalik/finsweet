@@ -97,11 +97,13 @@
             font-weight: 600;
             @include font(24, 36);
             margin-bottom: 8px;
+            display: block;
         }
         .position {
             font-weight: 500;
             @include font(14, 20);
             color: $font-color;
+            display: block;
         }
     }
 }

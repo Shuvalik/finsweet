@@ -35,11 +35,11 @@ function App() {
           <Route index element={<Home />} />
           <Route path='service/' element={<Service />} />
           <Route path='company/' element={<Company />} />
-          <Route path='company/people/' element={<PeopleDetails />} />
+          <Route path='company/:hash' element={<PeopleDetails />} />
           <Route path='career/' element={<Career />} />
-          <Route path='career/position/' element={<CareerPosition />} />
+          <Route path='career/:hash' element={<CareerPosition />} />
           <Route path='news/' element={<News />} />
-          <Route path='news/details' element={<NewsDetail />} />
+          <Route path='news/:hash' element={<NewsDetail />} />
           <Route path='contact-us/' element={<Contact />} />
           <Route path='privacy-policy/' element={<PrivacyPolicy />} />
         </Route>

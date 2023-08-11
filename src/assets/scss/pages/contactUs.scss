@@ -104,11 +104,14 @@
     .leaflet-container {
         aspect-ratio: 1282/409;
     }
-    .leaflet-popup-content {
-
-    }
     .leaflet-popup-content-wrapper, .leaflet-popup-tip {
-    background: #000;
-    color: #fff;
+        background: $black-color;
+        color: $white-color;
+        font-family: $base-font;
+        font-weight: 500;
+        @include font(18, 28);
+    }
+    .leaflet-container a.leaflet-popup-close-button {
+        color: $white-color;
     }
 }

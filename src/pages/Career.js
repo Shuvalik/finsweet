@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { Link } from "react-router-dom";
 import '../assets/scss/pages/career.scss';
 import OurWorkCulture from '../components/sectionOurWorkCulture';
 import SubScribe from '../components/subScribe';
@@ -34,7 +35,7 @@ function Career(){
                                         <span>{item.requare2}</span>
                                     </div>
                                     <div className="simpleBox-link">
-                                        <a href="/" className="arrowLink"><span className="hoverEfectLinks">{content.textApplyLink}</span></a>
+                                         <Link to={`/career/${(item.title).replace(/ /g,'_')}`}  className="arrowLink"><span className="hoverEfectLinks">{content.textApplyLink}</span></Link>
                                     </div>
                                 </div>)
                     })}

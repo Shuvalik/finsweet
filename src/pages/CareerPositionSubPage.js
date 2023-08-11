@@ -1,4 +1,8 @@
+import { useParams } from "react-router-dom";
 function CareerPosition() {
+    const {hash} = useParams();
+    //const person = content.team.find((item) => item.name === hash.replaceAll("_", " "));
+    console.log(hash);
     return (
         <>
         <section>
