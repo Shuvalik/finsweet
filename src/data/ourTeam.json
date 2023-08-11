@@ -1,0 +1,55 @@
+{
+    "label": "MEET OUR TEAM",
+    "title": "Teamwork is the only way we work",
+    "text": "Our commitment to composable digital experiences gives brands the creativity and control to do more cool stuff, that their customers love. Join us on this exciting journey to the future of digital interaction.",
+    "team": [
+        {
+            "name": "Javena Melo",
+            "position": "Support Assist",
+            "image": "/images/team/img-1.jpg",
+            "text": ""
+        },
+        {
+            "name": "James Burke",
+            "position": "Chief Strategist",
+            "image": "/images/team/img-2.jpg",
+            "text": ""
+        },
+        {
+            "name": "title on sub page",
+            "position": "CEo",
+            "image": "/images/team/img-3.jpg",
+            "text": "subpage"
+        },
+        {
+            "name": "Bryan Barrera",
+            "position": "Head of Emerging Technologies",
+            "image": "/images/team/img-4.jpg",
+            "text": ""
+        },
+        {
+            "name": "Jeisson Rosas",
+            "position": "Integration / Development",
+            "image": "/images/team/img-5.jpg",
+            "text": ""
+        },
+        {
+            "name": "Glendel Acosta",
+            "position": "Full Stack Development",
+            "image": "/images/team/img-6.jpg",
+            "text": ""
+        },
+        {
+            "name": "Kelly Morrill",
+            "position": "Head of digital services",
+            "image": "/images/team/img-7.jpg",
+            "text": ""
+        },
+        {
+            "name": "Heejung Koh",
+            "position": "Head of creative",
+            "image": "/images/team/img-8.jpg",
+            "text": ""
+        }
+    ]
+}

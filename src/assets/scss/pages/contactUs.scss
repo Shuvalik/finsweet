@@ -1,0 +1,114 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+//contact
+#contact {
+    padding-top: 40px;
+    max-width: 57%;
+    @media only screen and (max-width: 960px) { 
+        text-align: left;
+        max-width: 100%;
+    }
+    .stylishCornerTreeColor {
+        margin-top: 25px;
+    }
+}
+.contactFirstSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: flex-start;
+    @media only screen and (max-width: 960px) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.contact-teaser {
+    background-color: $vialet-color;
+    padding: 83px 150px 118px 93px;
+    position: relative;
+    color: $white-color;
+    margin-top: 24px;
+    width: 42%;
+    @include font(18, 28);
+    font-weight: 500;
+    @media only screen and (max-width: 1200px) {
+        padding: 35px 45px;
+        align-self: flex-end;
+    }
+    @media only screen and (max-width: 960px) { 
+        width: 100%;
+        text-align: left;
+    }
+    a {
+        color: $white-color;
+        @include font(18, 28);
+        font-weight: 500;
+    }
+    &::before {
+        content: '';
+        height: 183px;
+        width: 23px;
+        left: -23px;
+        bottom: 0;
+        position: absolute;
+        @include colorlineVar2(bottom);
+    }
+    &::after {
+        content: '';
+        height: 23px;
+        width: 133px;
+        top: -23px;
+        right: 0;
+        position: absolute;
+        @include colorlineVar3(right);
+    }
+    address {
+        font-style: normal;
+        p > span {
+            display: block;
+        }
+        .partTitle {
+            color: $white-color;
+            opacity: 0.6;
+            @include font(14, 20);
+            padding-bottom: 11px;
+            margin-bottom: 13px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        .addInfo, .addInfo a {
+            color: $white-color;
+            opacity: 0.6;
+            @include font(14, 20);
+        }
+    }
+    .sotial-links {
+        width: 144px;
+        padding-top: 30px;
+        svg path {
+            fill: #e0e2ff;
+        }
+        a:hover svg path {
+            fill: $white-color;
+        }
+    }
+}
+#map {
+    padding-top: $main-space;
+    @media only screen and (max-width: 1020px) {
+      padding-top: $main-space-tb;
+    }
+    .imgHolder {
+        aspect-ratio: 1282/409;
+        width: 100%;
+    }
+    .leaflet-container {
+        aspect-ratio: 1282/409;
+    }
+    .leaflet-popup-content {
+
+    }
+    .leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: #000;
+    color: #fff;
+    }
+}

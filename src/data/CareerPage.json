@@ -1,0 +1,64 @@
+{
+    "namePage" : "CAREER AT FINSWEET",
+    "titlePage": "Careers",
+    "subTitle": "We hired people who are Always Passionate about what they do",
+    "text": "We believe in a diverse of personnel to bring cretive skills, thoughts, and ideas to the table.",
+    "textScrollBtn": "See Our open positions <span class='smodzi'>👇</span>",
+    "textApplyLink": "Apply Now",
+    "positionList": [
+        {
+            "title": "Front-end Developer",
+            "requare1": "Bengaluru · Full Time",
+            "requare2": "$10K - $18K · No equity",
+            "path": ""
+        },
+        {
+            "title": "Full Stack Developer",
+            "requare1": "Bengaluru · Full Time",
+            "requare2": "$08K - $10K · 4 to 5 Yrs Exp",
+            "path": ""
+        },
+        {
+            "title": "Testing Engineer",
+            "requare1": "Remote · Full Time ",
+            "requare2": "$08K - $10K · No equity",
+            "path": ""
+        },
+        {
+            "title": "Product Designer",
+            "requare1": "Mumbai . Fultime",
+            "requare2": "$08K - $10K · 4 to 5 Yrs Exp",
+            "path": ""
+        },
+        {
+            "title": "Wordpress Developer",
+            "requare1": "Mumbai, Full Time",
+            "requare2": "$08K - $10K · 4 to 5 Yrs Exp",
+            "path": ""
+        },
+        {
+            "title": "Jr. QA Tester",
+            "requare1": "California, USA . Full Time",
+            "requare2": "$14K - $23K · No equity",
+            "path": ""
+        },
+        {
+            "title": "Sr. UX Designer",
+            "requare1": "California, USA . Full Time",
+            "requare2": "$14K - $23K · No equity",
+            "path": ""
+        },
+        {
+            "title": "Social Media Manager",
+            "requare1": "Kolkata, India .  Fulltime",
+            "requare2": "$5K - $6K ·  Fresher  ",
+            "path": ""
+        },
+        {
+            "title": "Golang Developer",
+            "requare1": "Mumbai . Fultime",
+            "requare2": "$08K - $10K · 4 to 5 Yrs Exp",
+            "path": ""
+        }
+    ]
+}

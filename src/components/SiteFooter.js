@@ -3,8 +3,8 @@ import { MainNavFooter, SubNavFooter, contactLink } from '../data/navigation';
 import { footerContent } from '../data/footer';
 import content from '../data/ServicePage.json';
 import address from '../data/address.json';
-import {sotialLinks} from '../data/sotialLinks';
 import logoFooter from './../assets/images/logo-black.svg';
+import SotialLinks from './sotialLinks';
 function SiteFooter(){
     const titleAdressBox = {__html:footerContent.titleAdressBox};
     return (
@@ -17,7 +17,7 @@ function SiteFooter(){
                 <address>
                   <p><a href={'tel:' + (address["Contact Us"].tel).replaceAll(' ', '')}>{address["Contact Us"].tel}</a></p>
                   <p><a href={'mailto:' + (address["Contact Us"].email).replaceAll(' ', '')}>{address["Contact Us"].email}</a></p>
-                  <p className='separate'>{address["Location"]}</p>   
+                  <p className='separate'>{address["Location"].address}</p>   
                 </address>
               </div>
             </div>
@@ -70,16 +70,7 @@ function SiteFooter(){
                 <img src={logoFooter} alt="logo" />
               </a>
               <p className='copyRight'>{footerContent.copyRightText}</p>
-              <ul className="sotial-links">
-                {sotialLinks.map((item, index) => {
-                    const image = {__html:item.img};
-                    return (
-                        <li key={index}>
-                            <NavLink to={item.path} target="_blank" rel="noreferrer nofolow" title={item.title} dangerouslySetInnerHTML={image} />
-                        </li>
-                    )
-                })}
-              </ul>
+              <SotialLinks />
             </div>
           </div>
         </footer>

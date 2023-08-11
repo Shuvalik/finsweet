@@ -98,7 +98,7 @@ function FormContactUs({modal, close}){
         .finally(setDisabled(false));
     }
     return (
-        <div className={(modal) ? 'modalBox': 'contentBox'}>
+        <div className={(modal) ? 'modalBox': 'titleSectionHolder pixelOrange'}>
             {(modal) ? 
             <>
                 <button type="button" className="closeBtn" onClick={closeWindowHendler}>
@@ -109,7 +109,10 @@ function FormContactUs({modal, close}){
                 <h2 className="h2" dangerouslySetInnerHTML={titleBox} />
             </>
             : 
-            <h1 className="h2" dangerouslySetInnerHTML={titleBox} />
+            <>
+                <p className="sectionTitle">{contactInfoFormBox.label}</p>
+                <h1 className="h2" dangerouslySetInnerHTML={titleBox} />
+            </>
             }
             <p>{contactInfoFormBox.textPage}</p>
             <form onSubmit={submitHandler} id="contact">

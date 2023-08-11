@@ -1,5 +1,12 @@
 {
-    "Location" : "DLF Cybercity, Bhubaneswar, India, &52050",
+    "Location": {
+        "address": "DLF Cybercity, Bhubaneswar, India, &52050"
+    },
+    "Working Hour": {
+        "days": "Monday To Friday",
+        "time": "9:00 AM to 8:00 PM",
+        "addInfo": "Our Support Team is available 24Hrs"
+    },
     "Contact Us": {
         "tel": "020 7993 2905",
         "email": "hi@finsweet.com"

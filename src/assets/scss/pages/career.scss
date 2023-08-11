@@ -1,0 +1,173 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+//career
+.careerFirstSection {
+    background-image: url('./../../images/bg-careers.jpg');
+    background-position: center 99%;
+    position: relative;
+    background-repeat: no-repeat;
+    padding-bottom: 250px;
+    overflow: hidden;
+    @media only screen and (max-width: 1350px) {
+        padding-bottom: 174px;
+    }
+    @media only screen and (max-width: 960px) {
+        padding-bottom: 74px;
+        background-size: contain;
+    }
+    @media only screen and (max-width: 480px) {
+        padding-bottom: 54px;
+        &::before, &::after {
+            display: none;
+        }
+    }
+    .oneColumn {
+        background-color: $white-color;
+        text-align: center;
+        .titleSectionHolder {
+            margin: 0 auto;
+        }
+        .sectionTitle {
+            margin-bottom: 28px;
+        }
+    }
+    h1 {
+        mix-blend-mode:screen;
+        @include font(275, 275);
+        height: 250px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $white-color;
+        text-align: center;
+        @media only screen and (max-width: 1350px) {
+            @include font(175, 175);
+            height: 175px;
+        }
+        @media only screen and (max-width: 960px) {
+            @include font(75, 75);
+            height: 75px;
+        }
+        @media only screen and (max-width: 480px) {
+            @include font(55, 55);
+            height: 55px;
+        }
+    }
+}
+.linkScrollHolder {
+    text-align: center;
+    padding-top: 65px;
+    @media only screen and (max-width: 1020px) {
+        padding-top: 25px;
+    }
+    button {
+        color: $main-color;
+        @include font(18, 28);
+        font-weight: 500;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+            text-shadow: $font-link-color 1px 0 10px;
+            display: inline-block;
+        }
+        span {
+            display: block;
+            margin-top: 10px;
+        }
+    }
+}
+.listGreedBox {
+    padding: 78px 76px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 96px;
+    @media only screen and (max-width: 1020px) {
+        padding: 40px;
+        margin-top: 30px;
+    }
+    @media only screen and (max-width: 960px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (max-width: 660px) {
+        gap: 15px;
+        padding: 25px;
+    }
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .simpleBox {
+        padding: 51px 50px 28px;
+        display: flex;
+        flex-direction: column;
+        background-color: $white-color;
+        min-height: 243px;
+        @media only screen and (max-width: 1200px) {
+            padding: 30px;
+        }
+        @media only screen and (max-width: 660px) {
+            padding: 20px;
+        }
+        @media only screen and (max-width: 768px) {
+            min-height: auto;
+        }
+        &-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        &-text {
+            flex-grow: 1;
+            span {
+                margin-bottom: 3px;
+                color: $font-color;
+                display: block;
+            }
+        }
+        .arrowLink {
+            color: $font-link-color2;
+            padding-right: 30px;
+        }
+    }
+}
+.spotList {    
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 12px;
+    @media only screen and (max-width: 960px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 20px;
+    }
+    .spot {
+        background-color: $white-color;
+        padding: 33px 56px 7px 31px;
+        color: $font-color;
+        @include font(14, 20);
+        @media only screen and (max-width: 768px) {
+            padding: 20px 20px 7px 20px;
+        }
+        &-icon {
+            display: inline-flex;
+            @include circle(40);
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 8px;
+            @include font(16, 28);
+            background-color: $orange-lightest-color;
+        }
+        &-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: $main-color;
+            @include font(16, 28);
+        }
+    }
+}

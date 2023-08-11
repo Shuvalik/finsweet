@@ -1,0 +1,37 @@
+{
+    "label": "OUR WORK & CULTURE",
+    "title": "Come and join a team of highly skilled professionals.",
+    "text": "Our company culture is something we feel is at the core of creating a great business for all stakeholders involved. If we create a place where we love to work, then we can all settle in and revel in being great at what we do.",
+    "listItems": [
+        {
+            "icon": "😷",
+            "title": "Covid-19 insurance",
+            "text": "Insurance for foreigners helps to cover cost of treatment if you were diagnosed with Covid-19"
+        },
+        {
+            "icon": "⏱",
+            "title": "Flexible working time",
+            "text": "Flexible working including part time working options"
+        },
+        {
+            "icon": "🏡",
+            "title": "Work from home",
+            "text": "Fully hybrid work model meaning you choose where you work and which days"
+        },
+        {
+            "icon": "🎉",
+            "title": "Annual retreats",
+            "text": "An annual planning retreat is a crucial opportunity for business leaders to step away from the day-to-day grind "
+        },
+        {
+            "icon": "💰",
+            "title": "Learning stipend",
+            "text": "Continuous learning and training options including LinkedIn Learning and Master Class"
+        },
+        {
+            "icon": "💪",
+            "title": "Gym membership",
+            "text": "Our top-of-the-line fitness membership leaves nothing to chance – with access to our hundreds of clubs nationwide"
+        }
+    ]
+}

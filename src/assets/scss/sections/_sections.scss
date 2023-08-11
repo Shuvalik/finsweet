@@ -201,6 +201,7 @@ section .slick-dots {
             border: 0;
             width: 100%;
             padding: 20px 130px 20px 30px;
+            height: 65px;
             font-family: $base-font;
             font-weight: 500;
             color: $font-color;
@@ -221,6 +222,7 @@ section .slick-dots {
             top: 0;
             .btn {
                 padding: 0 40px;
+                height: 65px;
                 @media only screen and (max-width: 1200px) {
                     padding: 0 20px;
                 }
@@ -235,170 +237,6 @@ section .slick-dots {
     }
 }
 
-//career
-.careerFirstSection {
-    background-image: url('./../../images/bg-careers.jpg');
-    background-position: center 99%;
-    position: relative;
-    background-repeat: no-repeat;
-    padding-bottom: 250px;
-    overflow: hidden;
-    @media only screen and (max-width: 1350px) {
-        padding-bottom: 174px;
-    }
-    @media only screen and (max-width: 960px) {
-        padding-bottom: 74px;
-        background-size: contain;
-    }
-    @media only screen and (max-width: 480px) {
-        padding-bottom: 54px;
-        &::before, &::after {
-            display: none;
-        }
-    }
-    .oneColumn {
-        background-color: $white-color;
-        text-align: center;
-        .titleSectionHolder {
-            margin: 0 auto;
-        }
-        .sectionTitle {
-            margin-bottom: 28px;
-        }
-    }
-    h1 {
-        mix-blend-mode:screen;
-        @include font(275, 275);
-        height: 250px;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        background-color: $white-color;
-        text-align: center;
-        @media only screen and (max-width: 1350px) {
-            @include font(175, 175);
-            height: 175px;
-        }
-        @media only screen and (max-width: 960px) {
-            @include font(75, 75);
-            height: 75px;
-        }
-        @media only screen and (max-width: 480px) {
-            @include font(55, 55);
-            height: 55px;
-        }
-    }
-}
-.linkScrollHolder {
-    text-align: center;
-    padding-top: 65px;
-    @media only screen and (max-width: 1020px) {
-        padding-top: 25px;
-    }
-    a {
-        color: $main-color;
-        @include font(18, 28);
-        font-weight: 500;
-        display: inline-block;
-        span {
-            display: block;
-            margin-top: 10px;
-        }
-    }
-}
-.listGreedBox {
-    padding: 78px 76px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 32px;
-    margin-top: 96px;
-    @media only screen and (max-width: 1020px) {
-        padding: 40px;
-        margin-top: 30px;
-    }
-    @media only screen and (max-width: 960px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    @media only screen and (max-width: 660px) {
-        gap: 15px;
-        padding: 25px;
-    }
-    @media only screen and (max-width: 768px) {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .simpleBox {
-        padding: 51px 50px 28px;
-        display: flex;
-        flex-direction: column;
-        background-color: $white-color;
-        min-height: 243px;
-        @media only screen and (max-width: 1200px) {
-            padding: 30px;
-        }
-        @media only screen and (max-width: 660px) {
-            padding: 20px;
-        }
-        @media only screen and (max-width: 768px) {
-            min-height: auto;
-        }
-        &-title {
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-        &-text {
-            flex-grow: 1;
-            span {
-                margin-bottom: 3px;
-                color: $font-color;
-                display: block;
-            }
-        }
-        .arrowLink {
-            color: $font-link-color2;
-            padding-right: 30px;
-        }
-    }
-}
-.spotList {    
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 12px;
-    @media only screen and (max-width: 960px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    @media only screen and (max-width: 768px) {
-        grid-template-columns: repeat(1, 1fr);
-        margin-top: 20px;
-    }
-    .spot {
-        background-color: $white-color;
-        padding: 33px 56px 7px 31px;
-        color: $font-color;
-        @include font(14, 20);
-        @media only screen and (max-width: 768px) {
-            padding: 20px 20px 7px 20px;
-        }
-        &-icon {
-            display: inline-flex;
-            @include circle(40);
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 8px;
-            @include font(16, 28);
-            background-color: $orange-lightest-color;
-        }
-        &-title {
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: $main-color;
-            @include font(16, 28);
-        }
-    }
-}
 //news
 .mainNews {
     .authorInfo span {
@@ -528,108 +366,6 @@ section .slick-dots {
                 flex-grow: 1;
             }
         }
-    }
-}
-//contact
-#contact {
-    padding-top: 40px;
-    max-width: 57%;
-    @media only screen and (max-width: 960px) { 
-        text-align: left;
-        max-width: 100%;
-    }
-    .stylishCornerTreeColor {
-        margin-top: 25px;
-    }
-}
-.contactFirstSection {
-    display: flex;
-    justify-content: space-between;
-    gap: 60px;
-    align-items: flex-start;
-    @media only screen and (max-width: 960px) {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-.contact-teaser {
-    background-color: $vialet-color;
-    padding: 83px 150px 118px 93px;
-    position: relative;
-    color: $white-color;
-    margin-top: 24px;
-    width: 42%;
-    @include font(18, 28);
-    font-weight: 500;
-    @media only screen and (max-width: 1200px) {
-        padding: 35px 45px;
-        align-self: flex-end;
-    }
-    @media only screen and (max-width: 960px) { 
-        width: 100%;
-        text-align: left;
-    }
-    a {
-        color: $white-color;
-        @include font(18, 28);
-        font-weight: 500;
-    }
-    &::before {
-        content: '';
-        height: 183px;
-        width: 23px;
-        left: -23px;
-        bottom: 0;
-        position: absolute;
-        @include colorlineVar2(bottom);
-    }
-    &::after {
-        content: '';
-        height: 23px;
-        width: 133px;
-        top: -23px;
-        right: 0;
-        position: absolute;
-        @include colorlineVar3(right);
-    }
-    address {
-        font-style: normal;
-        p > span {
-            display: block;
-        }
-        .partTitle {
-            color: $white-color;
-            opacity: 0.6;
-            @include font(14, 20);
-            padding-bottom: 11px;
-            margin-bottom: 13px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-        }
-        .addInfo, .addInfo a {
-            color: $white-color;
-            opacity: 0.6;
-            @include font(14, 20);
-        }
-    }
-    .sotial-links {
-        width: 144px;
-        padding-top: 30px;
-        svg path {
-            fill: #e0e2ff;
-        }
-        a:hover svg path {
-            fill: $white-color;
-        }
-    }
-}
-#map {
-    padding-top: $main-space;
-    @media only screen and (max-width: 1020px) {
-      padding-top: $main-space-tb;
-    }
-    .imgHolder {
-        aspect-ratio: 1282/409;
-        width: 100%;
     }
 }
 
