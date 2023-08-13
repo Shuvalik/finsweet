@@ -54,10 +54,10 @@ function FormContactUs({modal, close}){
         setValues({...values, [target.name]: target.value })
     }
     const msg = `
-<b> name: </b> ${values.name}
-<b> email: </b> ${values.email}
-<b> subject: </b> ${values.subject}
-<b> text: </b> ${values.messege}`;
+<b>Name: </b> ${values.name}
+<b>Email: </b> ${values.email}
+<b>Subject: </b> ${values.subject}
+<b>Text: </b> ${values.messege}`;
     async function submitHandler (event) {
         event.preventDefault();
         setDisabled(true);

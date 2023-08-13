@@ -34,8 +34,8 @@ function SubScribe() {
         setValues(target.value)
     }
     const msg = `
-<b> Subscribed </b>
-<b> email: </b> ${values}`;
+<b>Subscribed</b>
+<b>Email: </b> ${values}`;
     async function submitHandler (event) {
         event.preventDefault();
         setDisabled(true);

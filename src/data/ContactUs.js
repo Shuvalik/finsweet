@@ -6,5 +6,5 @@ export const contactInfoFormBox = {
     "labelEmail": "E-mail",
     "labelSubject": "Subject",
     "labelMessege": "Message",
-    "labelButton": "Send Message",
+    "labelButton": "Send Message"
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import content from "../data/CareerSubPage.json";
 function TabContainer({data}) {
     const [activeState, setActiveState] = useState('details');
     function Tab({label, value}){
@@ -23,9 +23,9 @@ function TabContainer({data}) {
     return (
         <div id="tabContainer" className="container bg-turquoise">
                 <ul className="tabTitle">
-                    <Tab value="details" label="Details" />
-                    <Tab value="requirements" label="Requirements"  />
-                    <Tab value="responsibilities" label="Responsibilities" />
+                    <Tab value="details" label={content.lebelTab1} />
+                    <Tab value="requirements" label={content.lebelTab2}  />
+                    <Tab value="responsibilities" label={content.lebelTab3} />
                 </ul>
                 <TabContent />
             </div>

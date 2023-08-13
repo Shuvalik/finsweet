@@ -244,6 +244,9 @@ section .slick-dots {
     @media only screen and (max-width: 480px) {
         flex-direction: column;
     }
+    .btn {
+        display: inline-flex;
+    }
 }
 .colorTeaser {
     background-color: #FFE0C7;
@@ -321,7 +324,7 @@ section .slick-dots {
         }
     }
 }
-#applyNow {
+.applyNow {
     padding: $main-space 0 0;
     @media only screen and (max-width: 1020px) {
         padding: $main-space-tb 0 0;
@@ -372,41 +375,20 @@ section .slick-dots {
             transform: translateY(-50%);
 
         }
-        // input[type="checkbox"] {
-        //     width: 36px;
-        //     height: 36px;
-        //     position: relative;
-        //     border: 3px solid $blue-color-font;
-        //     cursor: pointer;
-        //     background: $vialet-lightest-color;
-        //     & ~ label {
-        //         position: relative;
-        //         display: block;
-        //         padding-left: 20px;
-        //         width: 65%;
-        //         @include font(16, 24);
-        //         font-weight: 400;
-        //         top: 0;
-        //         left: 0;
-        //         transform: translateY(0);
-        //         @media only screen and (max-width: 960px) {
-        //             width: 100%;
-        //         }
-        //     }
-        //     &::after {
-        //         _content: '';
-        //         position: absolute;
-        //         top: 50%;
-        //         left: 50%;
-        //         width: 18px;
-        //         height: 11px;
-        //         border: 3px solid $white-color;
-        //         border-top: 0;
-        //         border-right: 0;
-        //         transform: translate(-50%, -50%) rotate(45deg);
-
-        //     }
-        //}
+        input:focus + label, textarea:focus + label, input:not(:placeholder-shown) + label,
+        textarea:not(:placeholder-shown) + label {
+            top: 22px;
+            @include font(16, 26);
+        }
+        .input-error {
+            @include font(16, 26);
+            letter-spacing: 0.6px;
+            left: 40px;
+            bottom: -50px;
+            @media only screen and (max-width: 768px) {
+                bottom: -36px;
+            }
+        }
         .stylishCornerTreeColor {
             margin-top: 13px;
         }
