@@ -1,9 +1,5 @@
 import '../assets/scss/pages/home.scss';
 import content from '../data/HomePage.json';
-
-import newsImg1 from './../assets/images/last-news-img1.jpg';
-import newsImg2 from './../assets/images/last-news-img2.jpg';
-
 import FormContactUs from '../components/FormContactUs';
 import { useState } from 'react';
 import ClientList from '../components/clientList';
@@ -56,7 +52,7 @@ function Home() {
               <div className="twoColumns">
                 <div className="leftImageBox">
                   <div className="imgHolder">
-                    <img src={newsImg1} alt="" />
+                    {/* <img src={newsImg1} alt="" /> */}
                   </div>
                   <div className="textHolder">
                     <span className="date">Jan 19, 2021</span>
@@ -68,7 +64,7 @@ function Home() {
                 </div>
                 <div className="leftImageBox">
                   <div className="imgHolder">
-                    <img src={newsImg2} alt="" />
+                    {/* <img src={newsImg2} alt="" /> */}
                   </div>
                   <div className="textHolder">
                     <span className="date">Jan 19, 2021</span>

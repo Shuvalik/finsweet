@@ -29,7 +29,7 @@ function News() {
         if (StorageNews !== null) {
             const now = new Date().getTime();
             const lastUpdate = + localStorage.getItem('lastNewsUpdate');
-            if (now - lastUpdate < ( 2 * 60 * 60 * 1000)) {
+            if (now - lastUpdate < ( 24 * 60 * 60 * 1000)) {
                 const ns = JSON.parse(StorageNews);
                 setNewsList(ns);
                 const tnews = findTrendingNews(ns);

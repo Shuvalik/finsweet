@@ -1,0 +1,58 @@
+{
+    "title": "Testing Engineer",
+    "text": "We are passionate about continuing the development of our staff and always welcoming more talent.",
+    "descr": [
+        {
+            "point": "Remote"
+        },
+        {
+            "point": "Department: Product Engineering"
+        },
+        {
+            "point": "Full Time."
+        }
+    ],
+    "details": [
+        {
+            "point": "Publish Posts on various social media channels"
+        },
+        {
+            "point": "Promote content on social networks and monitor engagement (e.g. comments and shares)"
+        },
+        {
+            "point": "Research industry-related topics"
+        }
+    ],
+    "requirements": [
+        {
+            "point": "At least 5 years of experience in developing and maintaining."
+        },
+        {
+            "point": "Working knowledge of SEO principles."
+        },
+        {
+            "point": "Experience with build tools such as Gulp or Webpack."
+        },
+        {
+            "point" :"Experience with cross-browser compatibility testing."
+        },
+        {
+            "point" :"Experience code reviewing, leading, and mentoring"
+        },
+        {
+            "point" :"Strong communication and collaboration skills, with the ability to work effectively in cross-functional teams"
+        }
+    ],
+    "responsibilities": [
+        {
+            "point": "Debug errors, troubleshoot issues, and perform routine performance optimizations."
+        },
+        {
+            "point": "Build code pattern libraries, responsive page templates, and single-page web applications from annotated visual designs using Reactjs and Nextjs."
+        },
+        {
+            "point": "Have great problem-solving skills and you work well in a team."
+        }
+    ]
+
+}

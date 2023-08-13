@@ -1,4 +1,4 @@
-import {NavLink} from "react-router-dom";
+import {NavLink, useLocation} from "react-router-dom";
 import { MainNav } from "../data/navigation";
 import logo from './../assets/images/logo.svg';
 import Hamburger from 'hamburger-react';
@@ -6,12 +6,14 @@ import { useState } from "react";
 
 function SiteHeader() {
     const [isOpen, setOpen] = useState(false);
-
+    const current = useLocation().pathname;
+    
     function clickHandler() {
       if (isOpen) {
           setOpen(false);
       }
     }
+    
     return (
         <header className="header">
             <div className="container">
@@ -23,7 +25,7 @@ function SiteHeader() {
                   {MainNav.map((item, index) => {
                         return (
                             <li key={index}>
-                                <NavLink to={item.to} onClick={clickHandler}>{item.title}</NavLink>
+                                <NavLink to={item.to} className={((current.includes(item.to)) && (item.to !== '/')) ? 'active' : ''} onClick={clickHandler}>{item.title}</NavLink>
                             </li>
                         )
                      })}

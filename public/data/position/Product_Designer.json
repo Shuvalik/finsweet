@@ -1,0 +1,52 @@
+{
+    "title": "Product Designer",
+    "text": "We are passionate about continuing the development of our staff and always welcoming more talent.",
+    "descr": [
+        {
+            "point": "Remote, Mumbai  , 4 to 5 Years Of Experience"
+        },
+        {
+            "point": "Department: Designers"
+        },
+        {
+            "point": "Full Time."
+        }
+    ],
+    "details": [
+        {
+            "point": "Engage in opportunities to develop original content and concepts for web and mobile"
+        },
+        {
+            "point": "Design & Create highly engaging industry-related content in both photo, gif & video format"
+        }
+    ],
+    "requirements": [
+        {
+            "point": "At least 5 years of experience in developing and maintaining the front end of web applications."
+        },
+        {
+            "point": "3+ years experience with Reactjs."
+        },
+        {
+            "point" :"2+ years experience with Nextjs."
+        },
+        {
+            "point" :"Experience with Typescript."
+        },
+        {
+            "point" :"Knowledge of React tools including React.js, Webpack, and Redux."
+        }
+    ],
+    "responsibilities": [
+        {
+            "point": "Stay up-to-date with the latest trends and technologies in front-end development and provide recommendations for improvement."
+        },
+        {
+            "point": "Stay plugged into emerging technologies and industry trends."
+        },
+        {
+            "point": "Write high-quality, scalable, and reusable code."
+        }
+    ]
+
+}
