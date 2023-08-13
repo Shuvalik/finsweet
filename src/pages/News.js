@@ -1,5 +1,5 @@
 import '../assets/scss/pages/news.scss';
-import {NC_API_KEY} from '../evn.js';
+import {NC_API_KEY, NC_API_URL} from '../evn.js';
 import {TitleSectionRecent, TitleSectionAllNews} from '../data/labelNews.js';
 import { useEffect, useRef, useState } from 'react';
 import TrendingNews from '../components/sectionTendingNews';
@@ -40,7 +40,7 @@ function News() {
             }
         }
 
-        fetch('https://api.newscatcherapi.com/v2/search?q=development&lang=en&page=1&page_size=11&sort_by=date', {
+        fetch(`${NC_API_URL}?q=development&lang=en&page=1&page_size=11&sort_by=date`, {
             method: 'GET',
             headers: {
                 'x-api-key': NC_API_KEY

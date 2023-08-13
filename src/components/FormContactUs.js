@@ -54,6 +54,7 @@ function FormContactUs({modal, close}){
         setValues({...values, [target.name]: target.value })
     }
     const msg = `
+<b>Contact us</b>
 <b>Name: </b> ${values.name}
 <b>Email: </b> ${values.email}
 <b>Subject: </b> ${values.subject}

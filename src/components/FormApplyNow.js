@@ -67,6 +67,7 @@ function ApplyNow() {
         }
     }
     const msg = `
+<b>Apply Now</b>
 <b>First Name: </b> ${values.firstName}
 <b>Last Name: </b> ${values.lastName}
 <b>Email: </b> ${values.email}

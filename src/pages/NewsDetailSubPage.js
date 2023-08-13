@@ -22,6 +22,8 @@ console.log(useLocation());
 
             
             </div>    
+        </section>
+        <section>
             <SubScribe />
         </section>
         </>

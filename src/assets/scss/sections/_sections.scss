@@ -358,7 +358,7 @@ section .slick-dots {
         textarea {
             height: 100px;
             height: 225px;
-            &::placeholder {
+            + label {
                 @include font(18, 28);
                 font-weight: 500;
                 position: absolute;

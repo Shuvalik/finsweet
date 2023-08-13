@@ -17,7 +17,6 @@
         aspect-ratio: 624/390;
         max-width: 624px;
         &.fullWidth {
-            aspect-ratio: 1280/369;
             max-width: 1280px;
         }
     }
@@ -56,6 +55,10 @@
         .imageHolder {
             aspect-ratio: 296/248;
             width: 100%;
+            @media only screen and (max-width: 1200px) {
+                max-width: 220px;
+                height: auto;
+            }
             @media only screen and (max-width: 960px) {
                 width: auto;
                 height: 240px;
@@ -90,6 +93,9 @@
     .titleBox {
         position: relative;
         margin: 0;
+        overflow: hidden;
+        max-height: 140px;
+        margin-bottom: 20px;
     }
     .maskLink {
         position: absolute;
