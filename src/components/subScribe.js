@@ -61,9 +61,10 @@ function SubScribe() {
              if (response.ok) {
                 toast.success('Thanks!', {position: "top-center", theme: "dark"});
                 setValues('')
+             } else {
+                const textError = errorsMassege(response.status);
+                throw new Error(textError);
              }
-             const textError = errorsMassege(response.status);
-             throw new Error(textError);
         })
         .catch((error) => {
             toast.error(error.message, {position: "top-center", theme: "dark"})

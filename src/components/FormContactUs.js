@@ -59,7 +59,7 @@ function FormContactUs({modal, close}){
 <b>Email: </b> ${values.email}
 <b>Subject: </b> ${values.subject}
 <b>Text: </b> ${values.messege}`;
-    async function submitHandler (event) {
+    function submitHandler (event) {
         event.preventDefault();
         setDisabled(true);
         const errorMasseges = validate(values);
@@ -68,7 +68,7 @@ function FormContactUs({modal, close}){
             setDisabled(false);
             return false
         }
-        await fetch(urlString, {
+        fetch(urlString, {
             method: 'post',
             headers: {
                 'Accept': 'application/json',
@@ -89,9 +89,10 @@ function FormContactUs({modal, close}){
                     subject: '',
                     messege: ''
                 })
+             } else {
+                const textError = errorsMassege(response.status);
+                throw new Error(textError);
              }
-             const textError = errorsMassege(response.status);
-             throw new Error(textError);
         })
         .catch((error) => {
             toast.error(error.message, {position: "top-center", theme: "dark"})

@@ -13,7 +13,7 @@
             "spotText": "We take time to review site traffic with an emphasis on visitor trends, traffic sources, content review, goals, search, and campaign tracking.",
             "text": "We take time to review site traffic with an emphasis on visitor trends, traffic sources, content review, goals, search, and campaign tracking. Performance is crucial for any mobile app’s success. Our development team employs robust optimization techniques to enhance your app’s speed and responsiveness.",
             "spotId": "#garniture",
-            "image": "/images/cont-img-service1.jpg"
+            "image": "images/cont-img-service1.jpg"
         },
         {
             "title": "Development",
@@ -23,7 +23,7 @@
             "spotText": "Web development encompasses creating and maintaining websites involving various technologies and programming languages.",
             "text": "Web development encompasses creating and maintaining websites involving various technologies and programming languages. Skilled developers use HTML, CSS, and JavaScript to build visually appealing and functional sites. We  provede development services in today’s digital landscape.",
             "spotId": "#development",
-            "image": "/images/cont-img-service2.jpg"
+            "image": "images/cont-img-service2.jpg"
         },
         {
             "title": "User Experience Design",
@@ -33,7 +33,7 @@
             "spotText": "A well-designed interface is the key to a successful website or application, as it enhances user experience and promotes user interaction. ",
             "text": "A well-designed interface is the key to a successful website or application, as it enhances user experience and promotes user interaction. Our expert designers combine creativity and functionality to create interfaces that leave a lasting impression.",
             "spotId": "#design",
-            "image": "/images/cont-img-service3.jpg"
+            "image": "images/cont-img-service3.jpg"
         },
         {
             "title": "Digital Marketing & Strategy",
@@ -43,7 +43,7 @@
             "spotText": "A robust digital strategy, complemented by solid market intelligence, is integral to successful web development in the digital era.",
             "text": "A robust digital strategy, complemented by solid market intelligence, is integral to successful web development in the digital era. One key aspect of this strategy often involves website re-design, ensuring that your online presence remains dynamic, relevant, and engaging.",
             "spotId": "#settings",
-            "image": "/images/cont-img-service4.jpg"
+            "image": "images/cont-img-service4.jpg"
         },
         {
             "title": "Web Analytics & User Insights",
@@ -53,7 +53,7 @@
             "spotText": "Based on market intelligence & competitor insights, our team will help you identify high-impact ideas.",
             "text": "Based on market intelligence & competitor insights, our team will help you identify high-impact ideas – enabling us to design and develop an experience that will make a difference for your users.",
             "spotId": "#support",
-            "image": "/images/cont-img-service5.jpg"
+            "image": "images/cont-img-service5.jpg"
         }
     ],
     "labelButtonFor": "Start a Project",

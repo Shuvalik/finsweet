@@ -3,7 +3,7 @@ import { MainNavFooter, SubNavFooter, contactLink } from '../data/navigation';
 import { footerContent } from '../data/footer';
 import content from '../data/ServicePage.json';
 import address from '../data/address.json';
-import logoFooter from './../assets/images/logo-black.svg';
+import logo from "../data/logo.json";
 import SotialLinks from './sotialLinks';
 function SiteFooter(){
     const titleAdressBox = {__html:footerContent.titleAdressBox};
@@ -66,9 +66,9 @@ function SiteFooter(){
           </div>
           <div className="bottomSide">
             <div className="container">
-              <a href="/" className='logo' title='Finsweet'>
-                <img src={logoFooter} alt="logo" />
-              </a>
+              <NavLink to="/"  className='logo' title='Finsweet'>
+                <img src={logo.logoBlack} alt="logo" />
+              </NavLink>
               <p className='copyRight'>{footerContent.copyRightText}</p>
               <SotialLinks />
             </div>

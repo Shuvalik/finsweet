@@ -14,13 +14,15 @@ function NewsDetail() {
         <>
         <section>
             <div className="container">
-                <TrendingNews news={newsItem} type="detailPageNews" />                
-                <div className="newsDetailsPage">
-                    <div className="contentHolder">
-                        <p>{newsItem.summary}</p>
-                        <Link to={newsItem.link} className="arrowLink" target="_blank"><span className="hoverEfectLinks">{labelReadMore}</span></Link>
+                <article>
+                    <TrendingNews news={newsItem} type="detailPageNews" />                
+                    <div className="newsDetailsPage">
+                        <div className="contentHolder">
+                            <p>{newsItem.summary}</p>
+                            <Link to={newsItem.link} className="arrowLink" target="_blank"><span className="hoverEfectLinks">{labelReadMore}</span></Link>
+                        </div>
                     </div>
-                </div>
+                </article>
             </div>    
         </section>
         <section>

@@ -6,49 +6,49 @@
         {
             "name": "Javena Melo",
             "position": "Support Assist",
-            "image": "/images/team/img-1.jpg",
+            "image": "images/team/img-1.jpg",
             "text": "Javena Melo leads all creative efforts with her amazing array of brand, creative and interface design skills. She is a graduate of RISD and one of its finest."
         },
         {
             "name": "James Burke",
             "position": "Chief Strategist",
-            "image": "/images/team/img-2.jpg",
+            "image": "images/team/img-2.jpg",
             "text": "As the Chief Strategy Officer at Consensus, Jim helps shape the overall direction and strategies for clients and also leads our UX teams."
         },
         {
             "name": "Shena Love",
             "position": "CEO",
-            "image": "/images/team/img-3.jpg",
+            "image": "images/team/img-3.jpg",
             "text": "Leads all creative efforts with her amazing array of brand, creative and interface design skills. He is a graduate of RISD and one of its finest."
         },
         {
             "name": "Bryan Barrera",
             "position": "Head of Emerging Technologies",
-            "image": "/images/team/img-4.jpg",
+            "image": "images/team/img-4.jpg",
             "text": "Bryan leads the Emerging Technologies team at Consensus with a reputation as the ultimate problem-solver who never loses perspective in times of crisis."
         },
         {
             "name": "Jeisson Rosas",
             "position": "Integration / Development",
-            "image": "/images/team/img-5.jpg",
+            "image": "images/team/img-5.jpg",
             "text": "A Systems Engineer and web software developer with over 10 years experience that enjoys creating beautiful and meaningful digital experiences – an entrepreneur, developer and designer of custom software."
         },
         {
             "name": "Glendel Acosta",
             "position": "Full Stack Development",
-            "image": "/images/team/img-6.jpg",
+            "image": "images/team/img-6.jpg",
             "text": "A full-stack software developer with over 16 years experience. Glendel has been fortunate to work with clients across the world while helping them design new sites and applications."
         },
         {
             "name": "Kelly Morrill",
             "position": "Head of digital services",
-            "image": "/images/team/img-7.jpg",
+            "image": "images/team/img-7.jpg",
             "text": "A seasoned digital veteran with exceptional organizational skills experienced in web design, email marketing, banner advertising and micro-sites and large website redesigns."
         },
         {
             "name": "Heejung Koh",
             "position": "Head of creative",
-            "image": "/images/team/img-8.jpg",
+            "image": "images/team/img-8.jpg",
             "text": "Heejung leads all creative efforts with her amazing array of brand, creative and interface design skills. She is a graduate of RISD and one of its finest."
         }
     ]

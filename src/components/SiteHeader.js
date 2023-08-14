@@ -1,6 +1,6 @@
 import {NavLink, useLocation} from "react-router-dom";
 import { MainNav } from "../data/navigation";
-import logo from './../assets/images/logo.svg';
+import logo from "../data/logo.json";
 import Hamburger from 'hamburger-react';
 import { useState } from "react";
 
@@ -17,9 +17,9 @@ function SiteHeader() {
     return (
         <header className="header">
             <div className="container">
-              <a href="/" className='logo' title='Finsweet'>
-                <img src={logo} alt="logo" />
-              </a>
+              <NavLink to="/" className='logo' title='Finsweet'>
+                <img src={logo.logoWhite} alt="logo" />
+              </NavLink>
               <nav id="mainMenu" className={(isOpen) ? 'open': 'close'}>
                 <ul>
                   {MainNav.map((item, index) => {

@@ -17,7 +17,7 @@ function CareerPosition() {
         responsibilities: []
     })
     function fetchPosition() {
-        const url = `/data/position/${hash}.json`;
+        const url = `data/position/${hash}.json`;
         fetch(url)
         .then(resp => resp.json())
         .then(resp => setData(resp))

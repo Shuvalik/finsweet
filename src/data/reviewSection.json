@@ -7,21 +7,21 @@
         {
             "name": "Johnny Andro",
             "position": "Director, Company",
-            "img": "/images/small-img-people.png",
+            "img": "images/small-img-people.png",
             "text": "Finsweet has been a wonderful partner to work with. I have been a customer now for the past few months now and I have had nothing but positive experiences!",
             "logoName": "TUFTS"
         },
         {
             "name": "Elis Bebb",
             "position": "Change Manager",
-            "img": "/images/small-img-people2.png",
+            "img": "images/small-img-people2.png",
             "text": "Finsweet has been essential partners in implementing our solution, with a depth of knowledge accompanied by enthusiasm in implementing a solution of personalised journeys for our customers.",
             "logoName": "G4S"
         },
         {
             "name": "Dimitris Nicolaides",
             "position": "VP of Business Development & Marketing",
-            "img": "/images/small-img-people3.png",
+            "img": "images/small-img-people3.png",
             "text": "Working with Finsweet has given us an insight into our marketing infrastructure that has enabled us to really leverage the software investments .",
             "logoName": "Tulip"
         }

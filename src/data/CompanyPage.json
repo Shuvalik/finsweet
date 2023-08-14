@@ -4,13 +4,13 @@
     "textPage" : "We have over 15 years of expertise delivering bespoke consulting, design, architecture and build services using world-leading technology and thinking.",
     "images": [
         {
-            "imgPath": "/images/content-about-section1.jpg"
+            "imgPath": "images/content-about-section1.jpg"
         },
         {
-            "imgPath": "/images/content-about-section2.jpg"
+            "imgPath": "images/content-about-section2.jpg"
         },
         {
-            "imgPath": "/images/content-about-section3.jpg"
+            "imgPath": "images/content-about-section3.jpg"
         }
     ],
     "sectionAboutUs": {
