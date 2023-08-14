@@ -1,0 +1,64 @@
+{
+    "title": "Front-end Developer",
+    "text": "We are passionate about continuing the development of our staff and always welcoming more talent.",
+    "descr": [
+        {
+            "point": "Remote, India , 4 to 5 Years Of Experience"
+        },
+        {
+            "point": "Department: Product Engineering"
+        },
+        {
+            "point": "Full Time 5 Position Available."
+        }
+    ],
+    "details": [
+        {
+            "point": "Create and edit video content for multi-platform use and distribution for social media channels (Facebook, Youtube, Instagram, Snapchat, IGTV, Facebook Stories and Instagram Stories)."
+        },
+        {
+            "point": "Design & Create highly engaging industry-related content in both photo, gif & video format"
+        },
+        {
+            "point": "Publish Posts on various social media channels"
+        }
+    ],
+    "requirements": [
+        {
+            "point": "At least 5 years of experience in developing and maintaining the front end of web applications."
+        },
+        {
+            "point": "Expertise in HTML, CSS, and JavaScript (ES6+)."
+        },
+        {
+            "point": "3+ years experience with Reactjs."
+        },
+        {
+            "point" :"2+ years experience with Nextjs."
+        },
+        {
+            "point" :"Experience with Typescript."
+        },
+        {
+            "point" :"Knowledge of React tools including React.js, Webpack, and Redux."
+        },
+        {
+            "point" :"Experience with JavaScript libraries such as jQuery and Bootstrap."
+        },
+        {
+            "point": "Familiarity with CSS pre processor Sass."
+        }
+    ],
+    "responsibilities": [
+        {
+            "point": "Develop high-quality, responsive, and user-friendly web applications using HTML, CSS, and JavaScript."
+        },
+        {
+            "point": "Build code pattern libraries, responsive page templates, and single-page web applications from annotated visual designs using Reactjs and Nextjs."
+        },
+        {
+            "point": "Write clean, well-documented, and maintainable code that follows software engineering best practices."
+        }
+    ]
+
+}
