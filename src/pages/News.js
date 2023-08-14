@@ -1,12 +1,12 @@
 import '../assets/scss/pages/news.scss';
 import {NC_API_KEY, NC_API_URL} from '../evn.js';
+import { toast } from "react-toastify";
 import {TitleSectionRecent, TitleSectionAllNews} from '../data/labelNews.js';
 import { useEffect, useRef, useState } from 'react';
 import TrendingNews from '../components/sectionTendingNews';
 import NewsItem from '../components/newsItem';
 import SubScribe from '../components/subScribe';
 function News() {
-    const [newsList, setNewsList] = useState([]);
     const fetchCount = useRef(0);
     const [trendNews, setTrendNews] = useState({});
     const [recentNews, setRecentNews] = useState([]);
@@ -22,20 +22,21 @@ function News() {
             allN: listN
         };
     }
+    function resolveResult(ns) {
+        const tnews = findTrendingNews(ns);
+        setTrendNews(tnews);
+        setRecentNews(findRecentNews(ns, tnews).lastN);
+        setAllNews(findRecentNews(ns, tnews).allN);
+    }
     function fetchNews() {
         if (fetchCount.current !== 0) return false;
         fetchCount.current++;
         const StorageNews = localStorage.getItem('newsList');
-        if (StorageNews !== null) {
+        if ((StorageNews !== null)  && (StorageNews !== "undefined")) {
             const now = new Date().getTime();
             const lastUpdate = + localStorage.getItem('lastNewsUpdate');
             if (now - lastUpdate < ( 24 * 60 * 60 * 1000)) {
-                const ns = JSON.parse(StorageNews);
-                setNewsList(ns);
-                const tnews = findTrendingNews(ns);
-                setTrendNews(tnews);
-                setRecentNews(findRecentNews(ns, tnews).lastN);
-                setAllNews(findRecentNews(ns, tnews).allN);
+                resolveResult(JSON.parse(StorageNews));
                 return false;
             }
         }
@@ -48,21 +49,17 @@ function News() {
         })
         .then(resp => resp.json())
         .then(resp => {
-            console.log(2);
-            const ns = resp.articles;
-            setNewsList(ns);
-            const tnews = findTrendingNews(ns);
-            setTrendNews(tnews);
-            setRecentNews(findRecentNews(ns, tnews).lastN);
-            setAllNews(findRecentNews(ns, tnews).allN);
-            localStorage.setItem('newsList', JSON.stringify(resp.articles));
-            localStorage.setItem('lastNewsUpdate', new Date().getTime());
-            //  const textError = errorsMassege(response.status);
-            //  throw new Error(textError);
+            if (resp.status !== 'ok') {
+                throw new Error(resp.error_code);
+            } else {
+                localStorage.setItem('newsList', JSON.stringify(resp.articles));
+                localStorage.setItem('lastNewsUpdate', new Date().getTime());
+                resolveResult(resp.articles);
+            }
         })
-        // .catch((error) => {
-        //     toast.error(error.message, {position: "top-center", theme: "dark"})
-        // })
+        .catch((error) => {
+            toast.error(error.message, {position: "top-center", theme: "dark"})
+        })
 
             
         

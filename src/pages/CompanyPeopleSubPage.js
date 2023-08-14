@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import OurTeam from "../components/sectionOurTeam";
+import SectionLatestNews from "../components/sectionLatestNews";
 import content from '../data/ourTeam.json';
 function PeopleDetails() {
     const {hash} = useParams();
@@ -18,7 +18,7 @@ function PeopleDetails() {
                     </div>
                 </div>
             </section>
-            <OurTeam />
+            <SectionLatestNews />
         </>
     )
 }

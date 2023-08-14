@@ -34,12 +34,12 @@ function SectionLatestNews(){
         })
         .then(resp => resp.json())
         .then(resp => {
-            console.log(resp);
-            setNewsList(resp.articles);
-            localStorage.setItem('newsList', JSON.stringify(resp.articles));
-            localStorage.setItem('lastNewsUpdate', new Date().getTime());
             if (resp.status !== 'ok') {
                 throw new Error(resp.error_code);
+            } else {
+                localStorage.setItem('newsList', JSON.stringify(resp.articles));
+                localStorage.setItem('lastNewsUpdate', new Date().getTime());
+                getLastTwoNews(resp.articles);
             }
         })
         .catch((error) => {
