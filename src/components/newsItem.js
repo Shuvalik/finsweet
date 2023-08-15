@@ -10,8 +10,8 @@ function NewsItem({news, type}) {
             </div>
             <div className="textHolder">
                 <div className="titleBox">
-                    <h4 className="h4">{news.title}</h4>
                     <Link to={`/news/${(news._id)}`} className="maskLink" />
+                    <h4 className="h4">{news.title}</h4>
                 </div>
                 {(type === "smallBox") ? <p>{news.excerpt}</p> : null}
                 <div className="authorInfo">

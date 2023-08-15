@@ -24,6 +24,7 @@ function CareerPosition() {
     }
     useEffect(()=> {
         fetchPosition();
+        window.document.title = content.windowTitle
     }, [])
     return (
         <>

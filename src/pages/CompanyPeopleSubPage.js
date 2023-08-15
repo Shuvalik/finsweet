@@ -1,9 +1,11 @@
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import SectionLatestNews from "../components/sectionLatestNews";
 import content from '../data/ourTeam.json';
 function PeopleDetails() {
     const {hash} = useParams();
     const person = content.team.find((item) => item.name === hash.replaceAll("_", " "));
+    useEffect(() => {window.document.title = `${person.name} | Finsweet`},[]);
     return (
         <>
             <section>

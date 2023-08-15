@@ -1,6 +1,6 @@
 import '../assets/scss/pages/home.scss';
 import content from '../data/HomePage.json';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import FormContactUs from '../components/FormContactUs';
 import ClientList from '../components/clientList';
 import SectionAboutUs from '../components/sectionAboutUs';
@@ -12,7 +12,7 @@ import SubScribe from '../components/subScribe';
 import SectionLatestNews from '../components/sectionLatestNews';
 
 function Home() {
-
+    useEffect(() => {window.document.title = content.windowTitle},[]);
     const [showModalBox, setShowModalBox] = useState(false);
     function clickHandler() {
       setShowModalBox(true);

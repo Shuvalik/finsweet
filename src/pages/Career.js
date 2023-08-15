@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from "react-router-dom";
 import '../assets/scss/pages/career.scss';
 import OurWorkCulture from '../components/sectionOurWorkCulture';
@@ -7,6 +7,7 @@ import content from '../data/CareerPage.json';
 function Career(){
     const textButton = {__html:content.textScrollBtn};
     const sectionToScroll = useRef(null);
+    useEffect(() => {window.document.title = content.windowTitle},[]);
     function clickHandler() {
         sectionToScroll.current.scrollIntoView({behavior: "smooth"});
     }

@@ -8,3 +8,4 @@ export const contactInfoFormBox = {
     "labelMessege": "Message",
     "labelButton": "Send Message"
 }
+export const windowTitleContact = "Contact Us | Finsweet";

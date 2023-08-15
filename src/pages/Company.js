@@ -6,7 +6,9 @@ import SectionApproach from '../components/sectionApproach';
 import OurTeam from '../components/sectionOurTeam';
 import OurVision from '../components/sectionOurVision';
 import SubScribe from '../components/subScribe';
+import { useEffect } from 'react';
 function Company() {
+    useEffect(() => {window.document.title = content.windowTitle},[]);
     return (
       <>
         <section>

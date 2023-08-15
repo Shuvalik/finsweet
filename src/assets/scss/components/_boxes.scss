@@ -95,6 +95,33 @@
         z-index: 1100;
         background-color: $white-color;
         position: relative;
+        @media only screen and (max-width: 1350px) {
+            .h2 {
+                @include font(32, 38);
+            }
+            #contact {
+                padding-top: 10px;
+                max-width: 80%;
+                .stylishCornerTreeColor {
+                    margin-top: 0;
+                }
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            width: 65%;
+            padding: 3% 10% 3% 3%;
+        }
+        @media only screen and (max-width: 600px) {
+            width: 90%;
+            .h2 {
+                @include font(26, 28);
+                margin: 0 20px 10px 0;
+            }
+            #contact {
+                padding-top: 0;
+                max-width: 95%;
+            }
+        }
         .closeBtn {
             position: absolute;
             right: 5%;

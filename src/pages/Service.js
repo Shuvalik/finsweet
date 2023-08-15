@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../assets/scss/pages/service.scss';
 import FormContactUs from '../components/FormContactUs';
@@ -8,6 +8,7 @@ import content from '../data/ServicePage.json';
 
 function Service() {
     const [showModalBox, setShowModalBox] = useState(false);
+    useEffect(() => {window.document.title = content.windowTitle},[]);
     function clickHandler() {
       setShowModalBox(true);
     }

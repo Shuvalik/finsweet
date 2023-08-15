@@ -1,7 +1,7 @@
 import '../assets/scss/pages/news.scss';
 import {NC_API_KEY, NC_API_URL} from '../evn.js';
 import { toast } from "react-toastify";
-import {TitleSectionRecent, TitleSectionAllNews} from '../data/labelNews.js';
+import {TitleSectionRecent, TitleSectionAllNews, windowTitle} from '../data/labelNews.js';
 import { useEffect, useRef, useState } from 'react';
 import TrendingNews from '../components/sectionTendingNews';
 import NewsItem from '../components/newsItem';
@@ -66,6 +66,7 @@ function News() {
     }
     useEffect(()=> {
         fetchNews();
+        window.document.title = windowTitle;
     }, [])
     return (
     <>

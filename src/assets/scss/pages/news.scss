@@ -103,6 +103,12 @@
         top: 0;
         height: 100%;
         width: 100%;
+        &:hover ~ .h4 {
+            text-decoration: underline; 
+        }
+        &:hover ~ img {
+            border: 1px solid $black-color; 
+        }
     }
 }
 .allNewsList {
