@@ -1,29 +1,27 @@
 {
   "files": {
-    "main.css": "/finsweet/static/css/main.e79811d9.css",
-    "main.js": "/finsweet/static/js/main.2d27ad8d.js",
+    "main.css": "/finsweet/static/css/main.a632372f.css",
+    "main.js": "/finsweet/static/js/main.5c3eed40.js",
     "static/js/787.8adb1126.chunk.js": "/finsweet/static/js/787.8adb1126.chunk.js",
     "static/media/NotoColorEmoji-Regular.woff2": "/finsweet/static/media/NotoColorEmoji-Regular.0f6b122253ef171b881a.woff2",
-    "static/media/bg-careers.jpg": "/finsweet/static/media/bg-careers.b7bd18210fc93a33d030.jpg",
     "static/media/Poppins-Regular.woff2": "/finsweet/static/media/Poppins-Regular.9641d5d087bc9e626d4c.woff2",
     "static/media/Poppins-SemiBold.woff2": "/finsweet/static/media/Poppins-SemiBold.b2be0bf638eacbb24415.woff2",
     "static/media/Poppins-Medium.woff2": "/finsweet/static/media/Poppins-Medium.13c404f85f4b8532e4e9.woff2",
+    "static/media/bg-careers.jpg": "/finsweet/static/media/bg-careers.c02d94f4a3b26c80c740.jpg",
     "static/media/icons-sprite.svg": "/finsweet/static/media/icons-sprite.f736e6dbf045839d541e8293c8a93ce5.svg",
-    "static/media/logo.svg": "/finsweet/static/media/logo.8ddbf62cee36f09498093ae3068600a4.svg",
-    "static/media/logo-black.svg": "/finsweet/static/media/logo-black.7cc84508e97794598f8bb832059c58fa.svg",
     "static/media/slick.svg": "/finsweet/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/finsweet/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/finsweet/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "index.html": "/finsweet/index.html",
     "static/media/slick.woff": "/finsweet/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/finsweet/index.html",
     "static/media/iconM.svg": "/finsweet/static/media/iconM.d5470077a49c1dbe93ef285b80d3eb51.svg",
     "static/media/quote.svg": "/finsweet/static/media/quote.af3f26d81b2ed8880587.svg",
-    "main.e79811d9.css.map": "/finsweet/static/css/main.e79811d9.css.map",
-    "main.2d27ad8d.js.map": "/finsweet/static/js/main.2d27ad8d.js.map",
+    "main.a632372f.css.map": "/finsweet/static/css/main.a632372f.css.map",
+    "main.5c3eed40.js.map": "/finsweet/static/js/main.5c3eed40.js.map",
     "787.8adb1126.chunk.js.map": "/finsweet/static/js/787.8adb1126.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e79811d9.css",
-    "static/js/main.2d27ad8d.js"
+    "static/css/main.a632372f.css",
+    "static/js/main.5c3eed40.js"
   ]
 }
