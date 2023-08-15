@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/finsweet/static/css/main.a632372f.css",
-    "main.js": "/finsweet/static/js/main.5c3eed40.js",
+    "main.css": "/finsweet/static/css/main.3b6f6611.css",
+    "main.js": "/finsweet/static/js/main.995a9206.js",
     "static/js/787.8adb1126.chunk.js": "/finsweet/static/js/787.8adb1126.chunk.js",
     "static/media/NotoColorEmoji-Regular.woff2": "/finsweet/static/media/NotoColorEmoji-Regular.0f6b122253ef171b881a.woff2",
     "static/media/Poppins-Regular.woff2": "/finsweet/static/media/Poppins-Regular.9641d5d087bc9e626d4c.woff2",
@@ -16,12 +16,12 @@
     "index.html": "/finsweet/index.html",
     "static/media/iconM.svg": "/finsweet/static/media/iconM.d5470077a49c1dbe93ef285b80d3eb51.svg",
     "static/media/quote.svg": "/finsweet/static/media/quote.af3f26d81b2ed8880587.svg",
-    "main.a632372f.css.map": "/finsweet/static/css/main.a632372f.css.map",
-    "main.5c3eed40.js.map": "/finsweet/static/js/main.5c3eed40.js.map",
+    "main.3b6f6611.css.map": "/finsweet/static/css/main.3b6f6611.css.map",
+    "main.995a9206.js.map": "/finsweet/static/js/main.995a9206.js.map",
     "787.8adb1126.chunk.js.map": "/finsweet/static/js/787.8adb1126.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a632372f.css",
-    "static/js/main.5c3eed40.js"
+    "static/css/main.3b6f6611.css",
+    "static/js/main.995a9206.js"
   ]
 }
